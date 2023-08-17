@@ -1,11 +1,12 @@
-import './App.css';
+import React from 'react'
+import EnrollNow from './components/Enroll Now/EnrollNow'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <h1>React App</h1>  
-    </div>
-  );
+    <>
+      <EnrollNow/>
+    </>
+  )
 }
 
-export default App;
+export default App
