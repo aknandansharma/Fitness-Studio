@@ -5,6 +5,7 @@ const App = () => {
   return (
     <>
       <EnrollNow/>
+      <h1>This is enroll now page.</h1>
     </>
   )
 }
