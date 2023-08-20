@@ -17,11 +17,14 @@ const Discount = () => {
     };
 
     return (
+        // this is heading
         <div className='bg-gray-100 min-h-screen flex justify-center items-center '>
             <div className='bg-white shadow-lg rounded-lg p-8'>
                 <h2 className='text-4xl text-slate-500 text-center font-bold mb-6 gymHeading'>
-                    Pricing Plan
+                    Choose Your Pricing Plan
                 </h2>
+
+                {/* start the grid */}
                 <div className='grid grid-cols-1 gap-6'>
                     <div class='inline-grid grid-cols-4 gap-2'>
                         <span className='container'>
@@ -31,9 +34,15 @@ const Discount = () => {
                                 alt='discount pic'
                             />
                             <div className='overlay'>
-                                <div className='text'>Hello World</div>
+                                <div className='text'>
+                                    You can save 10% if you choose the 3-month
+                                    plan option.
+                                </div>
                             </div>
                         </span>
+
+                        {/* This is Discount section of Enroll Now page */}
+
                         <span className='container'>
                             <img
                                 className='w-16 md:w-32 lg:w-48 object-cover lg:object-top image'
@@ -41,7 +50,10 @@ const Discount = () => {
                                 alt='discount pic'
                             />
                             <div className='overlay'>
-                                <div className='text'>Hello World</div>
+                                <div className='text'>
+                                    You can save 20% if you choose the 6-month
+                                    plan option.
+                                </div>
                             </div>
                         </span>
                         <span className='container'>
@@ -51,7 +63,10 @@ const Discount = () => {
                                 alt='discount pic'
                             />
                             <div className='overlay'>
-                                <div className='text'>Hello World</div>
+                                <div className='text'>
+                                    You can save 30% if you choose the 1-Year
+                                    plan option.
+                                </div>
                             </div>
                         </span>
                         <span className='container'>
@@ -61,20 +76,26 @@ const Discount = () => {
                                 alt='discount pic'
                             />
                             <div className='overlay'>
-                                <div className='text'>Hello World</div>
+                                <div className='text'>
+                                    You can save 40% if you choose the Lifetime
+                                    plan option.
+                                </div>
                             </div>
                         </span>
                     </div>
+                    {/* End of the discount section */}
+
+                    {/* start the main discount function and dropdown menu */}
 
                     <div>
                         <label
                             htmlFor='selectedPlan'
-                            className='block mb-2 text-sm font-medium text-gray-700'>
+                            className='block mb-2 text-sm font-medium text-gray-700 selectPlan'>
                             Select Plan
                         </label>
                         <select
                             id='selectedPlan'
-                            className='w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm'
+                            className='w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm selectBTN'
                             value={selectedPlan ? selectedPlan.duration : ""}
                             onChange={(e) => {
                                 const duration = e.target.value;
@@ -83,7 +104,7 @@ const Discount = () => {
                                 );
                                 setSelectedPlan(plan || null);
                             }}>
-                            <option value=''>Select a plan</option>
+                            <option  value=''>Select a plan</option>
                             {pricingPlans.map((plan) => (
                                 <option
                                     key={plan.duration}
@@ -96,23 +117,28 @@ const Discount = () => {
                     {selectedPlan && (
                         <div>
                             <div className='flex justify-between'>
-                                <p className='text-lg font-semibold'>{`Price: ${selectedPlan.price} INR`}</p>
-                                <p className='text-lg font-semibold'>{`Discount: ${selectedPlan.discount}% off`}</p>
+                                <p className='text-lg font-semibold priceDES'>{`Price: ${selectedPlan.price} INR`}</p>
+                                <p className='text-lg font-semibold discountDES'>{`Discount: ${selectedPlan.discount}% off`}</p>
                             </div>
-                            <p className='text-lg font-semibold'>{`Total: ${
+                            <p className='text-lg font-semibold totalDES'>{`Total: ${
                                 selectedPlan.price -
                                 (selectedPlan.price * selectedPlan.discount) /
                                     100
                             } INR`}</p>
                         </div>
                     )}
-                    <div className='mt-6'>
+
+                    {/* end of the main discount function and dropdown menu */}
+
+                    {/* This is the button section of Enroll Now page */}
+                    <div className='mt-6 text-center'>
                         <button
-                            className='inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
+                            className='inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500  '
                             onClick={handlePayment}
                             disabled={!selectedPlan}>
                             Make Payment
                         </button>
+                        {/* End of the button section of Enroll Now page */}
                     </div>
                 </div>
             </div>

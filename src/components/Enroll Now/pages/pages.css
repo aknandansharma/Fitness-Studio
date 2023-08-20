@@ -56,7 +56,7 @@ textarea{
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: #008CBA;
+    background-color: white;
   }
   
   .container:hover .overlay {
@@ -64,8 +64,9 @@ textarea{
   }
   
   .text {
-    color: white;
-    font-size: 20px;
+    color: black;
+    font-size: 17px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -74,6 +75,58 @@ textarea{
     transform: translate(-50%, -50%);
     text-align: center;
   }
+
+  .selectPlan{
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(95, 94, 94);
+  }
+
+  #selectedPlan{
+    font-size: 18px;
+    font-weight: 500;
+    color: #a14343;
+  }
+
+  #selectedPlan > option{
+    font-size: 18px;
+    font-weight: 500;
+    color: #348b29;
+  }
+
+.selectBTN{
+    font-size: 18px;
+    font-weight: 500;
+    color: #348b29;
+    border: 2px solid rgb(207, 24, 24);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.priceDES{
+    font-size: 25px;
+    font-weight: 700;
+    color: blue;
+}
+
+.discountDES{
+    font-size: 25px;
+    font-weight: 700;
+    color: red
+}
+
+.totalDES{
+    font-size: 30px;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+}
+
+
+
+
+
 
 
 
