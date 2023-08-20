@@ -5,8 +5,8 @@ import Discount from './components/Enroll Now/pages/Discount'
 const App = () => {
   return (
     <>
-      {/* <EnrollNow/> */}
-      <Discount/>
+      <EnrollNow/>
+      {/* <Discount/> */}
     </>
   )
 }
