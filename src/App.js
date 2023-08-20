@@ -1,11 +1,12 @@
 import React from 'react'
 import EnrollNow from './components/Enroll Now/EnrollNow'
+import Discount from './components/Enroll Now/pages/Discount'
 
 const App = () => {
   return (
     <>
-      <EnrollNow/>
-      <h1>This is enroll now page.</h1>
+      {/* <EnrollNow/> */}
+      <Discount/>
     </>
   )
 }
