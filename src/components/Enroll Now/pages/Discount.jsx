@@ -117,14 +117,14 @@ const Discount = () => {
                     {selectedPlan && (
                         <div>
                             <div className='flex justify-between'>
-                                <p className='text-lg font-semibold priceDES'>{`Price: ${selectedPlan.price} INR`}</p>
+                                <p className='text-lg font-semibold priceDES'>{`Price: ₹ ${selectedPlan.price}`}</p>
                                 <p className='text-lg font-semibold discountDES'>{`Discount: ${selectedPlan.discount}% off`}</p>
                             </div>
-                            <p className='text-lg font-semibold totalDES'>{`Total: ${
+                            <p className='text-lg font-semibold totalDES'>{`Total: ₹ ${
                                 selectedPlan.price -
                                 (selectedPlan.price * selectedPlan.discount) /
                                     100
-                            } INR`}</p>
+                            } only :-)`}</p>
                         </div>
                     )}
 
