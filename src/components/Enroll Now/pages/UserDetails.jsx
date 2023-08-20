@@ -27,7 +27,7 @@ const UserDetails = () => {
     <div className="bg-gray-100 min-h-screen flex justify-center items-center ">
       <div className="bg-white shadow-lg rounded-lg p-8">
         <h2 className="text-4xl text-slate-500 text-center font-bold mb-6 gymHeading">Gym Registration Form</h2>
-        <div className="grid grid-cols-1 gap-6">
+        <div className="grid grid-cols-2 gap-6">
           <div>
             <label htmlFor="fullName" className="block mb-2 text-sm font-medium text-gray-700">
               Full Name
@@ -38,6 +38,7 @@ const UserDetails = () => {
               className="w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
               value={fullName}
               onChange={(e) => setFullName(e.target.value)}
+              placeholder='Enter Full Name'
             />
           </div>
           <div>
@@ -50,6 +51,7 @@ const UserDetails = () => {
               className="w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
               value={currentWeight}
               onChange={(e) => setCurrentWeight(e.target.value)}
+              placeholder='Enter Current Weight'
             />
           </div>
           <div>
@@ -62,11 +64,12 @@ const UserDetails = () => {
               className="w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
               value={height}
               onChange={(e) => setHeight(e.target.value)}
+              placeholder='Enter Height'
             />
           </div>
           <div>
             <label htmlFor="bmi" className="block mb-2 text-sm font-medium text-gray-700">
-              BMI
+              Body Mass Index - BMI
             </label>
             <input
               type="text"
@@ -74,6 +77,7 @@ const UserDetails = () => {
               className="w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
               value={bmi}
               onChange={(e) => setBmi(e.target.value)}
+              placeholder='Find Your BMI: BMI = weight (kg) / (height (m))^2'
             />
           </div>
           <div>
@@ -86,6 +90,7 @@ const UserDetails = () => {
               className="w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
               value={age}
               onChange={(e) => setAge(e.target.value)}
+              placeholder='Enter Age'
             />
           </div>
           <div>
@@ -98,13 +103,14 @@ const UserDetails = () => {
               className="w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
               value={goalWeight}
               onChange={(e) => setGoalWeight(e.target.value)}
+              placeholder='Enter Goal Weight'
             />
           </div>
           <div>
             <label htmlFor="address" className="block mb-2 text-sm font-medium text-gray-700">
               Address
             </label>
-            <textarea id="address" className="w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" value={address} onChange={(e) => setAddress(e.target.value)} ></textarea>
+            <textarea id="address" placeholder='Enter Your Full Address with PIN code' className="w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" value={address} onChange={(e) => setAddress(e.target.value)} ></textarea>
           </div>
           <div>
             <label htmlFor="phoneNumber" className="block mb-2 text-sm font-medium text-gray-700">
@@ -116,6 +122,7 @@ const UserDetails = () => {
               className="w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
               value={phoneNumber}
               onChange={(e) => setPhoneNumber(e.target.value)}
+              placeholder='Enter Phone Number'
             />
           </div>
           <div>
@@ -128,6 +135,7 @@ const UserDetails = () => {
               className="w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
+              placeholder='Enter Email'
             />
           </div>
           <div>
@@ -140,6 +148,7 @@ const UserDetails = () => {
               className="w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
               value={emergencyContactPerson}
               onChange={(e) => setEmergencyContactPerson(e.target.value)}
+              placeholder='Enter Emergency Contact Person'
             />
           </div>
           <div>
@@ -152,6 +161,7 @@ const UserDetails = () => {
               className="w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
               value={relationship}
               onChange={(e) => setRelationship(e.target.value)}
+              placeholder='Enter Relationship'
             />
           </div>
           <div>
@@ -163,8 +173,10 @@ const UserDetails = () => {
               className="w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
               value={deserveReason}
               onChange={(e) => setDeserveReason(e.target.value)}
+              placeholder='Enter Reason why you deserve to be in the Grace Transformation Challenge.'
             ></textarea>
           </div>
+          
           <div className="flex items-center">
             <input
               type="checkbox"
@@ -174,12 +186,13 @@ const UserDetails = () => {
               onChange={(e) => setAcceptedTerms(e.target.checked)}
             />
             <label htmlFor="acceptedTerms" className="ml-2 text-sm text-gray-700">
-              I accept the terms and conditions
+              I accept the terms and conditions.
             </label>
           </div>
-          <div className="mt-6">
+          <br/>
+          <div className="mt-6 ">
             <button
-              className="inline-flex items-center  px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-center text-white bg-indigo-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
+              className="inline-flex items-center  px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-center text-white bg-indigo-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 cursor-pointer"
               onClick={handleSubmit}
               disabled={!acceptedTerms}
             >
