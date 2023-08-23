@@ -1,13 +1,30 @@
 import { useState } from "react";
 import './auth.css'
+import { GoogleAuthProvider, createUserWithEmailAndPassword, signInWithPopup } from "firebase/auth";
+import { useNavigate } from "react-router-dom";
+import { auth } from "../../../firebase";
+import GoogleButton from 'react-google-button'
+
+
 
 const Register = () => {
+
     const [formData, setFormData] = useState({
-        name: "",
         email: "",
-        phone: "",
         password: "",
     });
+    // const [registrationStatus, setRegistrationStatus] = useState('');
+
+    const navigate = useNavigate();
+
+    //   const handleRegistration = async () => {
+    //     try {
+    //       await auth.createUserWithEmailAndPassword(formData.email, formData.password);
+    //       setRegistrationStatus('success');
+    //     } catch (error) {
+    //       setRegistrationStatus('error');
+    //     }
+    //   };
 
     const handleChange = (e) => {
         setFormData((prevState) => ({
@@ -16,10 +33,37 @@ const Register = () => {
         }));
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log("Register Form Data:", formData);
+        // console.log("Register Form Data:", formData);
+        try {
+            const userCredential = await createUserWithEmailAndPassword(auth, formData.email, formData.password);
+
+            const user = userCredential.user;
+            localStorage.setItem('token', user.accessToken)
+            localStorage.setItem('user', JSON.stringify(user))
+            alert("User Register Successfully!");
+            navigate("/login")
+        } catch (error) {
+            alert(error.code);
+        }
     };
+
+    const handleSignInWithGoogle = async () => {
+        try {
+            const provider = new GoogleAuthProvider();
+            const userCredential = await signInWithPopup(auth, provider);
+            const user = userCredential.user;
+            localStorage.setItem('token', user.accessToken)
+            localStorage.setItem('user', JSON.stringify(user))
+            alert("User Login Successfully!");
+            navigate("/userdetails")
+        } catch (error) {
+            alert(error.code);
+        }
+    };
+
+
 
     return (
         <div className='flex flex-col md:flex-row h-screen'>
@@ -34,7 +78,7 @@ const Register = () => {
                 <div className='w-11/12 md:w-3/4 lg:w-2/3 xl:w-1/2'>
                     <h2 className='text-2xl font-semibold mb-8 text-center'>Register Here</h2>
                     <form className='space-y-4' onSubmit={handleSubmit}>
-                        <div>
+                        {/* <div>
                             <label
                                 className='block mb-2 text-lg'
                                 htmlFor='name'>
@@ -50,7 +94,7 @@ const Register = () => {
                                 required
                                 placeholder="Enter Full Name"
                             />
-                        </div>
+                        </div> */}
                         <div>
                             <label
                                 className='block mb-2 text-lg'
@@ -68,7 +112,7 @@ const Register = () => {
                                 placeholder="Enter Email Id"
                             />
                         </div>
-                        <div>
+                        {/* <div>
                             <label
                                 className='block mb-2 text-lg'
                                 htmlFor='phone'>
@@ -84,7 +128,7 @@ const Register = () => {
                                 required
                                 placeholder="Enter Phone Number"
                             />
-                        </div>
+                        </div> */}
                         <div>
                             <label
                                 className='block mb-2 text-lg'
@@ -109,24 +153,11 @@ const Register = () => {
                         </button>
                     </form>
                     <hr className="w-100 h-px my-8 bg-black border-0 dark:bg-black  " />
-                    
-                    <div className='flex justify-center items-center mt-4'>
-                        <svg
-                            xmlns='http://www.w3.org/2000/svg'
-                            fill='none'
-                            viewBox='0 0 24 24'
-                            stroke='currentColor'
-                            className='w-6 h-6 mr-2 text-blue-500 cursor-pointer'>
-                            <path
-                                strokeLinecap='round'
-                                strokeLinejoin='round'
-                                strokeWidth={2}
-                                d='M5 13l4 4L19 7'
-                            />
-                        </svg>
-                        <span className='text-lg text-gray-600'>
-                            Google Login
-                        </span>
+
+                    <div className='flex justify-center items-center mt-4 p-2'>
+                        <GoogleButton
+                            onClick={handleSignInWithGoogle}
+                        />
                     </div>
                 </div>
             </div>

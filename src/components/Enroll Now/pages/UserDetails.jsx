@@ -1,5 +1,8 @@
 import React, { useState } from 'react'
 import './pages.css'
+import {useNavigate} from 'react-router-dom'
+import { signOut } from 'firebase/auth';
+import { auth } from '../../../firebase';
 
 
 const UserDetails = () => {
@@ -16,17 +19,28 @@ const UserDetails = () => {
   const [relationship, setRelationship] = useState("");
   const [deserveReason, setDeserveReason] = useState("");
   const [acceptedTerms, setAcceptedTerms] = useState(false);
+  const navigate = useNavigate()
 
   const handleSubmit = (e) => {
     // Handle form submission here
     e.preventDefault();
     console.log(fullName, currentWeight, height, bmi, age, goalWeight, address, phoneNumber, email, emergencyContactPerson, relationship, deserveReason, acceptedTerms);
+    navigate("/userdetails/discount")
   };
+
+  const handleLogout = async() => {
+    await signOut(auth)
+    localStorage.removeItem('token')
+    localStorage.removeItem('user')
+    navigate("/login")
+  }
 
   return (
     <div className="bg-gray-100 min-h-screen flex justify-center items-center ">
+      
       <div className="bg-white shadow-lg rounded-lg p-8">
         <h2 className="text-4xl text-slate-500 text-center font-bold mb-6 gymHeading">Gym Registration Form</h2>
+        
         <div className="grid grid-cols-2 gap-6">
           <div>
             <label htmlFor="fullName" className="block mb-2 text-sm font-medium text-gray-700">
@@ -199,8 +213,19 @@ const UserDetails = () => {
               Submit
             </button>
           </div>
+          
+          <div className="mt-6 text-right">
+            <button
+              className="inline-flex items-center  px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-center text-white bg-indigo-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 cursor-pointer"
+              onClick={handleLogout}   
+            >
+              Logout
+            </button>
         </div>
+        </div>
+        
       </div>
+      
     </div>
   )
 
