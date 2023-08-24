@@ -5,22 +5,12 @@ import { signOut } from 'firebase/auth';
 import { auth } from '../../../firebase';
 
 const pricingPlans = [
-    { duration: "1 Month", price: 2000, discount: 0 },
+    { duration: "1 Month", price: 2000, discount: 5 },
     { duration: "3 Months", price: 4000, discount: 10 },
     { duration: "6 Months", price: 6000, discount: 20 },
     { duration: "1 Year", price: 9000, discount: 30 },
     { duration: "Lifetime", price: 12000, discount: 40 },
 ];
-
-
-// var formatter = new Intl.NumberFormat("en-US", {
-//     style: "currency",
-//     currency: "INR",
-
-//     // These options are needed to round to whole numbers if that's what you want.
-//     minimumFractionDigits: 0, // (this suffices for whole numbers, but will print 2500.10 as $2,500.1)
-//     //maximumFractionDigits: 0, // (causes 2500.99 to be printed as $2,501)
-// });
 
 const Discount = () => {
 
@@ -32,7 +22,10 @@ const Discount = () => {
         await signOut(auth)
         localStorage.removeItem('token')
         localStorage.removeItem('user')
-        navigate("/login")
+        const confirmed = window.confirm("Are you sure you want to log out?");
+        if (confirmed) {
+            navigate("/login");
+        }
     }
 
 
@@ -66,7 +59,7 @@ const Discount = () => {
         const options = {
             key: "rzp_test_mOvBMw0KK5CDuV",
             currency: "INR",
-            amount: amount * 100,
+            amount: 100000,
             name: "Fitness Stdio",
             description: "Thanks for Purchasing",
             image: "https://th.bing.com/th/id/OIP.Hx8-M_DJuLr23J4yqMO4gwHaGS?pid=ImgDet&rs=1",
@@ -74,6 +67,7 @@ const Discount = () => {
             handler: function (response) {
                 alert(response.razorpay_payment_id);
                 alert("Payment Successfully");
+                alert("You can LOGOUT!");
             },
 
             prefill: {
@@ -201,7 +195,7 @@ const Discount = () => {
                     {/* This is the button section of Enroll Now page */}
                     <div className='mt-6 text-center'>
                         <button
-                            className='inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500  '
+                            className='inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 cursor-pointer  '
                             // onClick={handlePayment}
                             onClick={() => displayRazorpay(selectedPlan)}
                             disabled={!selectedPlan}>
