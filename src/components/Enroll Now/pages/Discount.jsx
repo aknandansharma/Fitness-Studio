@@ -1,8 +1,13 @@
 import React, { useState } from "react";
 import "./pages.css";
 
+import { useNavigate } from 'react-router-dom'
+import { signOut } from 'firebase/auth';
+import { auth } from '../../../firebase';
+
 const pricingPlans = [
-    { duration: "1 Month", price: 2000, discount: 0 },
+    { duration: "1 Month", price: 2000, discount: 5 },
+
     { duration: "3 Months", price: 4000, discount: 10 },
     { duration: "6 Months", price: 6000, discount: 20 },
     { duration: "1 Year", price: 9000, discount: 30 },
@@ -10,10 +15,72 @@ const pricingPlans = [
 ];
 
 const Discount = () => {
+
+
     const [selectedPlan, setSelectedPlan] = useState(null);
 
-    const handlePayment = () => {
-        //  payment code
+    const navigate = useNavigate();
+
+    const handleLogout = async () => {
+        await signOut(auth)
+        localStorage.removeItem('token')
+        localStorage.removeItem('user')
+        const confirmed = window.confirm("Are you sure you want to log out?");
+        if (confirmed) {
+            navigate("/login");
+        }
+    }
+
+
+    const loadScript = (src) => {
+        return new Promise((resolve) => {
+            const script = document.createElement("script");
+            script.src = src;
+
+            script.onload = () => {
+                resolve(true);
+            };
+
+            script.onerror = () => {
+                resolve(false);
+            };
+
+            document.body.appendChild(script);
+        });
+    };
+
+    const displayRazorpay = async (amount) => {
+        const res = await loadScript(
+            "https://checkout.razorpay.com/v1/checkout.js"
+        );
+
+        if (!res) {
+            alert("You are offline...Failed to load razorpay SDK");
+            return;
+        }
+
+        const options = {
+            key: "rzp_test_mOvBMw0KK5CDuV",
+            currency: "INR",
+            amount: 100000,
+            name: "Fitness Stdio",
+            description: "Thanks for Purchasing",
+            image: "https://th.bing.com/th/id/OIP.Hx8-M_DJuLr23J4yqMO4gwHaGS?pid=ImgDet&rs=1",
+
+            handler: function (response) {
+                alert(response.razorpay_payment_id);
+                alert("Payment Successfully");
+                alert("You can LOGOUT!");
+            },
+
+            prefill: {
+                name: "Fitness Studio",
+            },
+        };
+
+        const paymentObject = new window.Razorpay(options);
+        paymentObject.open();
+
     };
 
     return (
@@ -104,7 +171,9 @@ const Discount = () => {
                                 );
                                 setSelectedPlan(plan || null);
                             }}>
-                            <option  value=''>Select a plan</option>
+
+                            <option value=''>Select a plan</option>
+
                             {pricingPlans.map((plan) => (
                                 <option
                                     key={plan.duration}
@@ -120,11 +189,12 @@ const Discount = () => {
                                 <p className='text-lg font-semibold priceDES'>{`Price: ₹ ${selectedPlan.price}`}</p>
                                 <p className='text-lg font-semibold discountDES'>{`Discount: ${selectedPlan.discount}% off`}</p>
                             </div>
-                            <p className='text-lg font-semibold totalDES'>{`Total: ₹ ${
-                                selectedPlan.price -
+
+                            <p className='text-lg font-semibold totalDES'>{`Total: ₹ ${selectedPlan.price -
                                 (selectedPlan.price * selectedPlan.discount) /
-                                    100
-                            } only :-)`}</p>
+                                100
+                                } only :-)`}</p>
+
                         </div>
                     )}
 
@@ -133,13 +203,27 @@ const Discount = () => {
                     {/* This is the button section of Enroll Now page */}
                     <div className='mt-6 text-center'>
                         <button
-                            className='inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500  '
-                            onClick={handlePayment}
+
+                            className='inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 cursor-pointer  '
+                            // onClick={handlePayment}
+                            onClick={() => displayRazorpay(selectedPlan)}
+
                             disabled={!selectedPlan}>
                             Make Payment
                         </button>
                         {/* End of the button section of Enroll Now page */}
                     </div>
+
+                    <hr className='w-100 h-px mt-0 bg-black border-0 dark:bg-black  ' />
+                    <div className='mt-6 text-center'>
+                        <button
+                            className='inline-flex items-center  px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-center text-white bg-indigo-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 cursor-pointer'
+                            onClick={handleLogout}
+                        >
+                            Logout
+                        </button>
+                    </div>
+
                 </div>
             </div>
         </div>
