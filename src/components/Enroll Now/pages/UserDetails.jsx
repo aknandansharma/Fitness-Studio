@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import "./pages.css";
 import { signOut } from "firebase/auth";
@@ -292,3 +293,4 @@ const UserDetails = () => {
 };
 
 export default UserDetails;
+
