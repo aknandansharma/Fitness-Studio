@@ -27,7 +27,7 @@ const Discount = () => {
         localStorage.removeItem('user')
         const confirmed = window.confirm("Are you sure you want to log out?");
         if (confirmed) {
-            navigate("/home");
+            navigate("/");
         }
     }
 

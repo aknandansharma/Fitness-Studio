@@ -3,8 +3,9 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import { useRef, useState } from "react";
 import "./Header.css";
 import { NavLink } from "react-router-dom";
-import logo from "../../assets/OIP.jpeg";
+import logo from "../../assets/OIP2.png";
 import Yoga from "../services/Yoga";
+
 
 const Header = () => {
 	const navRef = useRef();
@@ -18,9 +19,12 @@ const Header = () => {
 	};
 	return (
 		<header>
-			<img src={logo} />
+			<a href="/">
+			<img src={logo} className="HeaderLogo" alt="logo" />
+			</a>
 			<nav ref={navRef}>
-				<NavLink to="/home">Home</NavLink>
+			{/* // i am change to "/home" to "/" because i want to show home page first @aknandan */}
+				<NavLink to="/">Home</NavLink> 
 				<NavLink to="/about">About</NavLink>
 				<div
 					className={`dropdown ${dropdownVisible ? "active" : ""}`}

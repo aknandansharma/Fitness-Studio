@@ -1,79 +1,3 @@
-<<<<<<< HEAD
-=======
-
-// import React from "react";
-// import EnrollNow from "./components/Enroll Now/EnrollNow";
-// import Home from "./components/home/Home";
-// import { BrowserRouter, Route, Routes } from "react-router-dom";
-// import Header from "./components/header/Header";
-// import Services from "./components/services/Services";
-// import About from "./components/About us/About";
-// import Contact from "./components/contact us/Contact";
-// import Footer from "./components/footer/Footer";
-// import Register from "../src/components/Enroll Now/pages/Register";
-// import Login from "../src/components/Enroll Now/pages/Login";
-// import Discount from "../src/components/Enroll Now/pages/Discount";
-// import UserDeatails from "../src/components/Enroll Now/pages/UserDetails";
-// import Yoga from "./components/services/Yoga";
-// import Nutrition from "./components/services/Nutrition";
-// import Scroll from "./components/scroll/Scroll";
-// //import Zumba from "../src/components/services/zumba/Zumba";
-// //import Meditation from "../src/components/services/meditation/Meditation";
-// //import Pilates from "../src/components/services/pilates/Pilates";
-
-// const App = () => {
-// 	return (
-// 		<BrowserRouter>
-// 			<Header />
-// 			<Scroll />
-// 			<Routes>
-// 				<Route
-// 					path="/home"
-// 					element={<Home />}
-// 				/>
-// 				<Route
-// 					path="/services"
-// 					element={<Services />}
-// 				/>
-
-// 				<Route
-// 					path="/about"
-// 					element={<About />}
-// 				/>
-// 				<Route
-// 					path="/contact"
-// 					element={<Contact />}
-// 				/>
-
-// 				<Route
-// 					path="/enroll"
-// 					element={<EnrollNow />}
-// 				/>
-
-// 				<Route
-// 					path="/register"
-// 					element={<Register />}
-// 				/>
-// 				<Route
-// 					path="/login"
-// 					element={<Login />}
-// 				/>
-// 				<Route
-// 					path="/discount"
-// 					element={<Discount />}
-// 				/>
-// 				<Route
-// 					path="/userdetails"
-// 					element={<UserDeatails />}
-// 				/>
-// 			</Routes>
-// 			<Footer />
-// 		</BrowserRouter>
-// 	);
-// };
-
-// export default App;
->>>>>>> e898774dbad26e7c74cd71b2ea8065ad9b998311
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from "./components/header/Header";
@@ -101,9 +25,11 @@ const App = () => {
 			<Scroll />
 			<Routes>
 				<Route
-					path="/home"
+					path="/" // i am change to "/home" to "/" because i want to show home page first @aknandan
 					element={<Home />}
 				/>
+
+				// start of services path
 				<Route
 					path="/services"
 					element={<Services />}
@@ -128,14 +54,20 @@ const App = () => {
 					path="/services/zumba"
 					element={<Zumba />}
 				/> */}
+
+				// start of about us path
 				<Route
 					path="/about"
 					element={<About />}
 				/>
+
+				// start of contact us path
 				<Route
 					path="/contact"
 					element={<Contact />}
 				/>
+
+				// This is All indside Enroll Now path
 				<Route
 					path="/enroll"
 					element={<EnrollNow />}
