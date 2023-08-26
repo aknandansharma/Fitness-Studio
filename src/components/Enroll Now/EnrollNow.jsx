@@ -1,3 +1,4 @@
+
 import React from "react";
 import "./enrollNow.css";
 import { useNavigate } from "react-router-dom";
@@ -51,3 +52,4 @@ const EnrollNow = () => {
 };
 
 export default EnrollNow;
+
