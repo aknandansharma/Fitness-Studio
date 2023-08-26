@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 
 // import React from "react";
 // import EnrollNow from "./components/Enroll Now/EnrollNow";
@@ -71,6 +73,7 @@
 // };
 
 // export default App;
+>>>>>>> e898774dbad26e7c74cd71b2ea8065ad9b998311
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from "./components/header/Header";
@@ -86,10 +89,10 @@ import Login from "./components/Enroll Now/pages/Login";
 import Discount from "./components/Enroll Now/pages/Discount";
 import UserDetails from "./components/Enroll Now/pages/UserDetails";
 import Yoga from "./components/services/Yoga";
-import Pilates from "./components/services/Pilates";
-import Meditation from "./components/services/Meditation";
+//import Pilates from "./components/services/Pilates";
+// import Meditation from "./components/services/Meditation";
 import Nutrition from "./components/services/Nutrition";
-import Zumba from "./components/services/zumba/Zumba";
+// import Zumba from "./components/services/zumba/Zumba";
 
 const App = () => {
 	return (
@@ -112,8 +115,8 @@ const App = () => {
 				{/* <Route
 					path="/services/pilates"
 					element={<Pilates />}
-				/>
-				<Route
+				/> */}
+				{/* <Route
 					path="/services/meditation"
 					element={<Meditation />}
 				/> */}

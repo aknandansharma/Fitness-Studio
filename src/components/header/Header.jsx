@@ -4,6 +4,7 @@ import { useRef, useState } from "react";
 import "./Header.css";
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/OIP.jpeg";
+import Yoga from "../services/Yoga";
 
 const Header = () => {
 	const navRef = useRef();
@@ -29,11 +30,11 @@ const Header = () => {
 					<NavLink to="/services">Services</NavLink>
 					{dropdownVisible && (
 						<div className="dropdown-content">
-							<NavLink to="/yoga">Yoga</NavLink>
-							<NavLink to="/pilates">Pilates</NavLink>
-							<NavLink to="/meditation">Meditation</NavLink>
-							<NavLink to="/nutrition">Nutrition</NavLink>
-							<NavLink to="/zumba">Zumba</NavLink>
+							<NavLink to="/services/yoga">Yoga</NavLink>
+							<NavLink to="/services/pilates">Pilates</NavLink>
+							<NavLink to="/services/meditation">Meditation</NavLink>
+							<NavLink to="/services/nutrition">Nutrition</NavLink>
+							<NavLink to="/services/zumba">Zumba</NavLink>
 						</div>
 					)}
 				</div>
