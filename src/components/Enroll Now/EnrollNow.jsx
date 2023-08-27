@@ -43,7 +43,7 @@ const EnrollNow = () => {
                 </div>
             </div>
             <img
-                src='https://cdn.shopify.com/s/files/1/0592/6141/9682/files/20.06.2018.jpg?v=1632129817'
+                src='https://cdn.shopify.com/s/files/1/0592/6141/9682/files/20.06.2021_web.jpg?v=1632129564'
                 alt=''
                 className='w-5/6 mx-auto mb-10 -mt-20 rounded-lg shadow-md lg:-mt-60 dark:bg-red-500'
             />
