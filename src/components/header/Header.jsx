@@ -35,10 +35,12 @@ const Header = () => {
 					{dropdownVisible && (
 						<div className="dropdown-content ">
 							<NavLink  to="/services/yoga">Yoga</NavLink>
-							<NavLink  to="/services/pilates">Pilates</NavLink>
-							<NavLink  to="/services/meditation">Meditation</NavLink>
+
+							<NavLink  to="/services/pilates/Pilates">Pilates</NavLink>
+							<NavLink  to="/services/meditation/Meditation">Meditation</NavLink>
 							<NavLink  to="/services/nutrition">Nutrition</NavLink>
-							<NavLink  to="/services/zumba">Zumba</NavLink>
+							<NavLink  to="/services/zumba/Zumba">Zumba</NavLink>
+
 						</div>
 					)}
 				</div>

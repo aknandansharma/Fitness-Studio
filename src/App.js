@@ -13,10 +13,12 @@ import Login from "./components/Enroll Now/pages/Login";
 import Discount from "./components/Enroll Now/pages/Discount";
 import UserDetails from "./components/Enroll Now/pages/UserDetails";
 import Yoga from "./components/services/Yoga";
-//import Pilates from "./components/services/Pilates";
-// import Meditation from "./components/services/Meditation";
+
+import Pilates from "./components/services/pilates/Pilates";
+import Meditation from "./components/services/meditation/Meditation";
 import Nutrition from "./components/services/Nutrition";
-// import Zumba from "./components/services/zumba/Zumba";
+import Zumba from "./components/services/zumba/Zumba";
+
 
 const App = () => {
 	return (
@@ -38,24 +40,26 @@ const App = () => {
 					path="/services/yoga"
 					element={<Yoga />}
 				/>
-				{/* <Route
-					path="/services/pilates"
+
+				<Route
+					path="/services/pilates/Pilates"
 					element={<Pilates />}
 				/> 
-				{/* <Route
-					path="/services/meditation"
+				<Route
+					path="/services/meditation/Meditation"
 					element={<Meditation />}
-				/> */}
+				/>
+
 				<Route
 					path="/services/nutrition"
 					element={<Nutrition />}
 				/>
-				{/* <Route
-					path="/services/zumba"
-					element={<Zumba />}
-				/> */}
 
-				// start of about us path
+				<Route
+					path="/services/zumba/Zumba"
+					element={<Zumba />}
+				/>
+
 				<Route
 					path="/about"
 					element={<About />}

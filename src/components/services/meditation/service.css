@@ -5,23 +5,32 @@
     box-sizing: border-box;
   }
   .banner {
+
     position: relative;
+
     background: linear-gradient(rgba(252, 248, 248, 0.523), rgb(171, 171, 189) );
   }
   .me-title2{
     display: flex;
     flex-direction: column;
     padding-left: 15vw;
+
    padding-top: 7vh;
    padding-right: 10vw;
     color: #595959; 
+
   }
   .hero{
     display: flex;
     flex-direction: row;
-    height: 70vh;
+
   }
-  
+  .pilatesDesign{
+    display: flex;
+    flex-direction: row;
+
+  }
+
 .textDesign1{
   font-weight: bold;
   font-size: 2rem;
@@ -34,7 +43,9 @@
   color: rgb(57, 56, 56);
 }
  .choose-us{
-  margin-top: 20vh;
+
+  margin-top: 15vh;
+
  }
 
  .textDesign2{
@@ -46,6 +57,12 @@
  .heroimg{
   animation:  floatImage 4s ease-in-out infinite;
 }
+.chooseus{
+  display: flex;
+  flex-direction: row;
+ 
+}
+
 @keyframes floatImage{
   0%{
       transform: translateY(0);
@@ -67,6 +84,11 @@ align-items: center;
   font-size: 3vh;
 }
 @media (max-width: 520px) {
+
+  .whycard{
+    width: 70vh;
+  }
+
   .heroimg {
     display: none;
   }
@@ -76,28 +98,50 @@ align-items: center;
   }
   .textDesign1{
     font-size: 6vw;
-  
+
   }
   .textDesign2{
     font-size: 20px;
   }
+
   .paraDesign1{
     font-size: 5vw;
   }
   .cardpara{
    font-size: 4vw;
   }
-  .coursecard{
-    
-  }
-}
 
+  .pilates{
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+
+}
 @media (max-width:1200px) {
+
+  .whycard{
+    width: 70vh;
+  }
+
+
   .heroimg{
     display: none;
   }
   .cardbanner{
     width: 60vh;
   }
- 
+  }
+@media (max-width:800px){
+  .chooseus{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .pilates{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
+
