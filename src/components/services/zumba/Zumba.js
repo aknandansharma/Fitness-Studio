@@ -1,3 +1,4 @@
+
 import React from "react";
 import "./service.css";
 import Cover from "../../../assets/services-assets/images/zumbacover.png";
@@ -357,6 +358,7 @@ const Zumba = () => {
 
 		</div>
 	);
+
 };
 
 export default Zumba;

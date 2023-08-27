@@ -1,6 +1,4 @@
 
-
-
 import React from 'react';
 import './service.css';
 import Cover from '../../../assets/services-assets/images/pilatescover.png';
@@ -352,4 +350,6 @@ const Pilates = () => {
   );
 }
 
+
 export default Pilates;
+

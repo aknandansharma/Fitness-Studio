@@ -1,3 +1,4 @@
+
 import React from 'react';
 import "./service.css";
 import Cover from "../../../assets/services-assets/images/meditationcover.png";
@@ -355,4 +356,5 @@ const Meditation = () => {
 };
 
 export default Meditation;
+
 
