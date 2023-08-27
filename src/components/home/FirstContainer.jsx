@@ -27,7 +27,7 @@ const FirstContainer = () => {
 				/>
 				Your browser does not support the video tag.
 			</video>
-			<div className="content">
+			<div className="contents">
 				<h1>Pushing Boundaries, Breaking Limits.</h1>
 				<p>
 					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus

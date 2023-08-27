@@ -41,7 +41,7 @@ const App = () => {
 				{/* <Route
 					path="/services/pilates"
 					element={<Pilates />}
-				/> */}
+				/> 
 				{/* <Route
 					path="/services/meditation"
 					element={<Meditation />}
