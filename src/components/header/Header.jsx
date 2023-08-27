@@ -24,27 +24,27 @@ const Header = () => {
 			</a>
 			<nav ref={navRef}>
 			{/* // i am change to "/home" to "/" because i want to show home page first @aknandan */}
-				<NavLink to="/">Home</NavLink> 
-				<NavLink to="/about">About</NavLink>
+				<NavLink  to="/">Home</NavLink> 
+				<NavLink  to="/about">About</NavLink>
 				<div
 					className={`dropdown ${dropdownVisible ? "active" : ""}`}
 					onMouseEnter={toggleDropdown}
 					onMouseLeave={toggleDropdown}
 				>
-					<NavLink to="/services">Services</NavLink>
+					<NavLink  to="/services">Services</NavLink>
 					{dropdownVisible && (
-						<div className="dropdown-content">
-							<NavLink to="/services/yoga">Yoga</NavLink>
-							<NavLink to="/services/pilates">Pilates</NavLink>
-							<NavLink to="/services/meditation">Meditation</NavLink>
-							<NavLink to="/services/nutrition">Nutrition</NavLink>
-							<NavLink to="/services/zumba">Zumba</NavLink>
+						<div className="dropdown-content ">
+							<NavLink  to="/services/yoga">Yoga</NavLink>
+							<NavLink  to="/services/pilates">Pilates</NavLink>
+							<NavLink  to="/services/meditation">Meditation</NavLink>
+							<NavLink  to="/services/nutrition">Nutrition</NavLink>
+							<NavLink  to="/services/zumba">Zumba</NavLink>
 						</div>
 					)}
 				</div>
 
-				<NavLink to="/contact">Contact</NavLink>
-				<NavLink to="/enroll">Enroll Now</NavLink>
+				<NavLink  to="/contact">Contact</NavLink>
+				<NavLink className='enrollNowBTN' to="/enroll">Enroll Now</NavLink>
 				<button
 					className="nav-btn nav-close-btn"
 					onClick={showNavbar}

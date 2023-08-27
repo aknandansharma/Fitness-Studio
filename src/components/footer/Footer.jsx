@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import logo from "../../assets/OIP.jpeg";
+import logo from "../../assets/OIP2.png";
 import { FaFacebook, FaTwitter, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
@@ -8,7 +8,7 @@ const Footer = () => {
 		<footer>
 			<div className="footer_container">
 				<div className="about">
-					<img src={logo} />
+					<img src={logo}  alt="logo"/>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
 					<div className="social">

@@ -30,7 +30,7 @@ header img {
 
 nav a {
 	margin: 0 1.5rem;
-	color: #555555;
+	color: black;
 	text-decoration: none;
 	font-weight: 500;
 	padding: 10px;
@@ -190,3 +190,28 @@ header .nav-btn {
 		background-color: var(--mainColor);
 	}
 }
+
+/* NavBar Centered CSS */
+
+
+
+/* Enroll Now BTN CSS */
+.enrollNowBTN {
+	background-color: #f97316;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	font-size: 1.2rem;
+	font-weight: 500;
+	transition: transform 0.3s;
+	text-align: right;
+}
+
+.enrollNowBTN:hover {
+	transform: scale(1.1);
+	color: green;
+	background-color: white;
+	border: 1px solid green;
+}
+
