@@ -5,16 +5,17 @@ import "./Yoga.css";
 import Img from "../../assets/img/guy.png";
 import Img1 from "../../assets/img/gallery1.jpg";
 import Img2 from "../../assets/img/gallery2.jpg";
-//import Img3 from "../../assets/img/gallery3.jpg";
+import Img3 from "../../assets/img/gallery3.jpg";
 import Img4 from "../../assets/img/gallery4.jpg";
 import Img5 from "../../assets/img/gallery5.jpg";
 import Img6 from "../../assets/img/gallery6.jpg";
-// import Img7 from '../components/assets/img/woman1.jpg';
-// import Img8 from '../components/assets/img/woman2.jpg';
+import Img7 from '../components/assets/img/woman1.jpg';
+import Img8 from '../components/assets/img/woman2.jpg';
 
 function Yoga() {
 	return (
 		<>
+		{/* yoga main start */}
 			<div className="maindiv">
 				<div className="maindiv1">
 					<h1 className="heading">Yoga to Release Stress</h1>
@@ -35,6 +36,10 @@ function Yoga() {
 				</div>
 			</div>
 			<div>
+
+				{/* yoga main end */}
+
+				{/* yoga divcard start */}
 				<div className="divcard">
 					<h1 className="heading7">Gallery</h1>
 
@@ -87,7 +92,9 @@ function Yoga() {
 					</div>
 				</div>
 			</div>
+			{/* yoga divcard end *--------/}
 
+             {/* yoga courses start */}
 			<div className="divcor">
 				{/* <img src={Img1} alt="" className='backimg'/> */}
 				<h1 className="heading8">Courses Available</h1>
@@ -130,9 +137,12 @@ function Yoga() {
 						</div>
 					</div>
 				</div>
+				 {/* yoga courses end */}
 				<br />
 				<br />
 				<br />
+
+				{/* yoga courses detail start */}
 				<div className="bigdiv11">
 					<div className="card13">
 						<div className="content">
@@ -156,6 +166,9 @@ function Yoga() {
 					</div>
 				</div>
 			</div>
+			{/* yoga courses detail end */}
+
+			{/* yoga price planning  start */}
 			<div className="pricediv">
 				<span className="span">
 					{" "}
@@ -205,6 +218,10 @@ function Yoga() {
 					</div>
 				</div>
 			</div>
+			{/* yoga price planning  end */}
+
+
+			
 			{/* <div className='mainblog'>
                 
                 <div className='blog1'>
