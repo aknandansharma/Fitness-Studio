@@ -23,6 +23,7 @@ function About() {
 
     return (
         <>
+        {/* about us */}
             <div className='aboutus'>
                 <span class='span7'>About Us</span>
             </div>
@@ -49,6 +50,9 @@ function About() {
                     </a>
                 </div>
             </section>
+          {/* about us  end*/}
+
+          {/* faq start */}
             <div className='faqdiv'>
                 <div className='faq-img'>
                     <img
@@ -122,6 +126,9 @@ function About() {
                     </div>
                 </div>
             </div>
+            {/* faq end */}
+
+            {/* terms and condition start */}
             <div className='termbody'>
                 <div className='terms-box'>
                     <div className='terms-text'>
@@ -181,6 +188,7 @@ function About() {
                     </div>
                 </div>
             </div>
+            {/* terms and condition end */}
         </>
     );
 }

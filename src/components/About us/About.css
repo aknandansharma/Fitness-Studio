@@ -1,3 +1,5 @@
+/* about us css start */
+
 .aboutus{
     width: 100%;
     height: 350px; 
@@ -69,6 +71,9 @@ background-color: rgb(29, 28, 28);
 color: white;
 margin-left: 3rem;
 }
+/* about us css end */
+
+/* faq css start */
 .dropdown-faq {
 max-width: 600px;
 margin: 0 auto;
@@ -82,8 +87,7 @@ padding: 10px;
 background-color: rgb(175, 173, 173);
 border: none;
 border-radius: 5px;
-/* cursor: pointer; */
-/* color: white; */
+
 }
 .faq-question:hover{
                          background-color: rgb(48, 48, 48);
@@ -154,6 +158,10 @@ height: 20rem;
 margin-left: 10rem;
 margin-top: 5rem;
 }
+
+/* faq css end */
+
+/* terms and con css start */
 .termbody{
 background-image: url(https://images.unsplash.com/photo-1616279967983-ec413476e824?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTZ8fGZpdG5lc3N8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60);
 background-repeat: no-repeat;
@@ -240,3 +248,4 @@ transition: .3s linear;
 .btn21:hover{
 opacity: .6;
 }
+/* terms and con css end */
