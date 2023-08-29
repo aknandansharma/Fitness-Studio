@@ -118,6 +118,26 @@ function Nutrition() {
 
 			{/* maincourses end */}
 
+
+			<div className="blog">
+				<h1>Blog</h1>
+				<div className="mainblog">
+					<div className="mainblog1">
+						
+					</div>
+					<div className="mainblog2">
+						<h2>Unlock your potential with good nutrition</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							 Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+							 <div className="play-btn">
+								<button ><i className="fa-solid fa-play" href="https://www.youtube.com/watch?v=EO-5Fnh13kw" ></i></button>
+                             
+							 </div>
+					</div>
+				</div>
+
+			</div>
+
 			{/* price planing start  */}
 			<div className="pricediv">
 				<span className="span">

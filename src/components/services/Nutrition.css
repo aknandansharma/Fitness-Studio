@@ -176,3 +176,89 @@
 	width: 400px;
 	height: 300px;
 }
+.blog{
+    width: 100%;
+    height: 100vh;
+    /* background-color: aqua; */
+}
+.blog h1{
+    color: black;
+    text-shadow: 2px 2px 5px black;
+   font-size: 2.5rem;
+    margin-top: 4rem;
+    margin-left: 46rem;   
+}
+
+
+.mainblog1{
+      width: 500px;
+      height: 500px;
+      background-color: gray;
+      background: url(https://media.istockphoto.com/id/1418282970/photo/pretty-woman-looking-to-sideways-while-drinking-fruit-detox-juice-in-the-kitchen-at-home.webp?b=1&s=170667a&w=0&k=20&c=xkAXTEO34Ty629vjBqcIkvW_mq3GHmSSkvLRcTgH1aw=);
+      background-repeat: no-repeat;
+      background-size: contain;
+      
+       box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); ;
+       box-shadow: 6px 6px 10px 10px goldenrod;
+    
+}
+.mainblog2{
+    width: 500px;
+    height: 400px;
+    
+    margin: 1rem;
+    margin-left: 6rem;
+}
+.mainblog2 h2{
+                font-size: 3rem;
+                margin-top: 5rem;
+}
+.mainblog{
+    display: flex;
+    margin-left: 13rem;
+    margin-top: 5rem;
+}
+.play-btn{
+    background: rgb(54, 50, 49);
+    color: white;
+    font-size: 30px;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    margin: auto;
+    cursor: pointer;
+  margin-top: 4rem;
+    text-align: center;
+    border-radius: 50%;
+    margin-left: 4rem;
+   
+}
+.play-btn i{line-height: 100px; margin-left: 10px; margin-bottom: 10px;}
+.play-btn:before,.play-btn:after {
+    content: '';
+    border-radius: 50%;
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    right: -20px;
+    bottom: -10px;
+
+
+    opacity: 0;
+    border: 3px solid   goldenrod;
+   animation: animate 1.5s linear infinite;
+} 
+.play-btn:after{
+    animation-delay: 0.5s;
+}
+@keyframes animate{
+    0%{
+        transform: scale(.5);
+    }
+    50%{
+       opacity: 1;
+    }
+   100%{
+        transform: scale(1.5);
+    }
+}            
