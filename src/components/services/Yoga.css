@@ -503,7 +503,7 @@ background-color: rgb(57, 56, 56) ;
       width: 500px;
       height: 500px;
       background-color: gray;
-      background: url(https://askproject.net/savasa/wp-content/uploads/sites/19/2021/08/tabitha-turner-vuQP4z9B9Ac-unsplash-768x768.jpg);
+      background: url(https://askproject.net/savasa/wp-content/uploads/sites/19/2021/08/tabitha-turner-vuQP4z9B9Ac-unsplash-1024x1024.jpg);
       background-repeat: no-repeat;
       background-size: contain;
       
@@ -571,72 +571,367 @@ background-color: rgb(57, 56, 56) ;
         transform: scale(1.5);
     }
 }            
-
 @media only screen and (max-width: 500px){
-    .maindiv{
-                 display: flex;
-                 flex-direction: column;
-                 height: 70rem;
-                 width: 400px;
-    width: 344px;
-    }
-    .maindiv1{
-        margin-left: 0;
-        width: 300px;
-    height: 355px;
-        margin-left: 2rem;
-       
-        
-    }
-    .maindiv2{
-               display: none;
-                margin-top: 12rem;
-                height: 300px;
-                margin-left: 0;
-    }
-    .divcard{
-        width: 300px;
-        height: 90rem;
-    }
-    .maincard{
-        display: flex;
-        flex-direction: column;
-       
-        margin-left: 3rem;
-        width: 300px;
-    height: 59rem;
-    }
-    .card {
-        width: 258px;
-        height: 254px;
-        margin: 1rem;
-        margin-left: -3rem;
-       
-    }
-    .card1 {
-        width: 253px;
-        height: 300px;
-        /* background-color: gray; */
-        margin: 1.5rem;
-    }
-    .card2 {
-        width: 254px;
-        height: 340px;
-       
-        margin: 1.5rem;
-    }
-    
-      .heading7 {
-        color: black;
-        font-size: 2.5rem;
-        margin-top: 4rem;
-        justify-content: center;
-        margin-left: 10rem;
-      }
-        .divcor{
-            height: 20rem;
-            width: 400px;
-            margin-top: 3rem;
-        }
+    /* Common Mobile Styles */
 
+/* Set default font size */
+body {
+    font-size: 16px;
+  }
+  
+  /* Main Container */
+  .maindiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto; /* Adjust as needed */
+    min-height: 100vh;
+    background: linear-gradient(rgba(252, 248, 248, 0.523), rgb(171, 171, 189));
+    flex-direction: column; /* Stack content vertically on small screens */
+    padding: 2rem; /* Add padding for spacing */
+  }
+  
+  /* Image Animation */
+  .heroimg {
+    width: 100%; /* Adjust image width */
+    max-width: 280px; /* Set max width */
+    height: auto; /* Adjust height */
+    margin-top: 2rem; /* Adjust margin */
+    animation: floatImage 4s ease-in-out infinite;
+  }
+  
+  /* Adjust animation translation on small screens */
+  @keyframes floatImage {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-1.4rem); /* Adjust the value for smaller movement */
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+ /* Common Mobile Styles */
+
+/* Set default font size */
+body {
+    font-size: 16px;
+  }
+  
+  /* Main Container */
+  .maindiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto; /* Adjust as needed */
+    min-height: 100vh;
+    background: linear-gradient(rgba(252, 248, 248, 0.523), rgb(171, 171, 189));
+    flex-direction: column; /* Stack content vertically on small screens */
+    padding: 2rem; /* Add padding for spacing */
+  }
+  
+  /* Image Animation */
+  .heroimg {
+    width: 100%; /* Adjust image width */
+    max-width: 280px; /* Set max width */
+    height: auto; /* Adjust height */
+    margin-top: 2rem; /* Adjust margin */
+    animation: floatImage 4s ease-in-out infinite;
+  }
+  
+  /* Adjust animation translation on small screens */
+  @keyframes floatImage {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-1.4rem); /* Adjust the value for smaller movement */
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  /* Button Styles */
+.btn2 {
+    background-color: rgb(75, 73, 73); /* Keep button color */
+    height: 2.5rem;
+    border-radius: 5px;
+    width: 100%; /* Adjust width for full width on mobile */
+    margin: 0.5rem 0; /* Adjust margin for spacing */
+    color: white; /* Keep text color */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  /* Main Card Styles */
+  .maincard {
+    height: auto; /* Allow content to determine height */
+    background: linear-gradient(rgba(252, 248, 248, 0.523), rgb(171, 171, 189));
+    display: flex;
+    flex-direction: column; /* Stack content vertically on mobile */
+    align-items: center; /* Center content horizontally */
+    padding: 1rem; /* Add padding for spacing */
+    width: 100%; /* Adjust width for full width on mobile */
+    margin: 1rem 0; /* Adjust margin for spacing */
+  }
+  
+  /* Other styles */
+  .divcor {
+    width: 100%;
+    height: auto; /* Allow content to determine height */
+    /* Other styles */
+  }
+  .heading{
+    margin-left: -4rem;
+  }
+  
+  .backimg {
+    width: 100%; /* Adjust width for full width on mobile */
+    margin: 0 auto; /* Center image horizontally */
+    opacity: 0.5;
+  }
+  
+  .card,
+  .card1,
+  .card2 {
+    width: 100%; /* Adjust width for full width on mobile */
+    height: auto; /* Allow content to determine height */
+    margin: 1rem 0; /* Adjust margin for spacing */
+  }
+  
+  .imgcard {
+    width: 100%;
+    height: auto; /* Allow content to determine height */
+    transition: 0.5s ease;
+  }
+  
+  .heading7 {
+    color: black;
+    font-size: 2rem; /* Adjust font size for smaller screens */
+    text-shadow: 1px 1px 3px black; /* Slightly reduce text shadow */
+    margin-top: 2rem; /* Adjust margin for spacing */
+    text-align: center; /* Center text */
+  }
+  .btn1{
+    width: 23rem;
+  }
+  .btn2{
+    width: 80%;
+  }
+  
+  .heading8 {
+    color: rgb(0, 0, 0);
+    font-size: 2rem; /* Adjust font size for smaller screens */
+    text-shadow: 1px 1px 3px black; /* Slightly reduce text shadow */
+    text-align: center; /* Center text */
+    margin-top: 2rem; /* Adjust margin for spacing */
+  }
+  /* Our Course Styles */
+.ourcourse {
+    width: 100%;
+    height: auto; /* Allow content to determine height */
+    background: linear-gradient(rgba(252, 248, 248, 0.523), rgb(171, 171, 189));
+    display: flex;
+    flex-direction: column; /* Stack content vertically on mobile */
+    align-items: center; /* Center content horizontally */
+    padding: 2rem; /* Add padding for spacing */
+    margin-bottom: 3rem; /* Adjust margin for spacing */
+  }
+  
+  .ourcourse1 {
+    width: 100%; /* Adjust width for full width on mobile */
+    height: auto; /* Allow content to determine height */
+    background-image: url(https://media.istockphoto.com/id/673457266/photo/young-asian-woman-practicing-yoga-at-yoga-healthy-sport-gym.jpg?s=612x612&w=0&k=20&c=lgyvUineK21C4ZejRFRPN2yb-Xsd7PvqXchNXS4tSzk=);
+    background-size: cover; /* Ensure background image covers the container */
+    background-repeat: no-repeat;
+    margin: 1rem 0; /* Adjust margin for spacing */
+  }
+  
+  .ourcourse2 {
+    width: 100%; /* Adjust width for full width on mobile */
+    height: auto; /* Allow content to determine height */
+    margin: 1rem 0; /* Adjust margin for spacing */
+    text-align: center; /* Center text */
+  }
+  
+  .ourcourse2 h1 {
+    font-size: 1.2rem; /* Adjust font size for smaller screens */
+    margin-top: 2rem; /* Adjust margin for spacing */
+    color: rgb(57, 56, 56);
+  }
+  
+  .ybtn {
+    width: 100%; /* Adjust width for full width on mobile */
+    margin-left: 0rem;
+    height: 3rem;
+    color: white;
+    background-color: rgb(75, 73, 73);
+    margin-top: 1rem; /* Adjust margin for spacing */
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .ybtn:hover {
+    background-color: rgb(57, 56, 56);
+  }
+  
+  .heading9 {
+    color: rgb(29, 28, 28);
+    text-align: center; /* Center text */
+    margin-top: 3rem; /* Adjust margin for spacing */
+    font-weight: 500;
+  }
+  
+  .heading10 {
+    color: black;
+    font-size: 2rem; /* Adjust font size for smaller screens */
+    text-shadow: 1px 1px 3px black; /* Slightly reduce text shadow */
+    text-align: center; /* Center text */
+    margin-top: 2rem; /* Adjust margin for spacing */
+  }
+  
+  /* Big Div Styles */
+  .bigdiv {
+    width: 100%;
+    height: auto; /* Allow content to determine height */
+    background: linear-gradient(rgba(252, 248, 248, 0.523), rgb(171, 171, 189));
+    padding: 2rem; /* Add padding for spacing */
+  }
+  .bigdiv11{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .bigdiv h3 {
+    color: rgb(29, 28, 28);
+    text-align: center; /* Center text */
+    font-weight: 500;
+    margin-top: 3rem; /* Adjust margin for spacing */
+  }
+  /* ... (Previous CSS) ... */
+
+/* Mobile Responsive Styles */
+
+/* Adjustments for heading and cards */
+.bigdiv h1 {
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-left: 1rem; /* Adjust for centering on mobile */
+    text-align: center; /* Center text */
+  }
+  
+  .card11,
+  .card12,
+  .card13,
+  .card14 {
+    width: 100%; /* Adjust width for full width on mobile */
+    height: auto; /* Allow content to determine height */
+    margin-left: 0; /* Remove margin left on mobile */
+    margin-top: 2rem; /* Adjust margin for spacing */
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  /* Adjustments for content and price divs */
+  .content {
+    width: 100%; /* Adjust width for full width on mobile */
+    height: auto; /* Allow content to determine height */
+    margin-left: 0; /* Remove margin left on mobile */
+    margin-top: 5rem; /* Adjust margin for spacing */
+  }
+  
+  .headingh5 {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+    text-align: center; /* Center text */
+    margin-left: 0; /* Remove margin left on mobile */
+    margin-top: 1rem; /* Adjust margin for spacing */
+  }
+  
+  .readbtn {
+    margin-left: 0; /* Remove margin left on mobile */
+    text-align: center; /* Center text */
+    font-size: 1rem; /* Adjust font size for smaller screens */
+    text-decoration: underline;
+  }
+  
+  .lorem {
+    margin-left: 1rem; /* Adjust margin for spacing */
+  }
+  
+  .pricediv {
+    margin-top: 2rem; /* Adjust margin for spacing */
+  }
+  
+  /* Adjustments for price div main and plan */
+  .pricedivmain {
+    height: auto; /* Allow content to determine height */
+  }
+  
+  .priceheading1 {
+    font-size: 2rem; /* Adjust font size for smaller screens */
+    margin-left: 1rem; /* Adjust margin for centering */
+    text-align: center; /* Center text */
+    margin-top: 3rem; /* Adjust margin for spacing */
+  }
+  .plan{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .plan1,
+  .plan2,
+  .plan3 {
+    width: 100%; /* Adjust width for full width on mobile */
+    height: auto; /* Allow content to determine height */
+    margin-left: 0; /* Remove margin left on mobile */
+    margin-top: 2rem; /* Adjust margin for spacing */
+  }
+  .planh1{
+    margin-left: 0;
+  }
+  .planh3{
+    margin-left: 0;
+  }
+  .planh11{
+  margin-left: 0;
+  }
+  .planh2{
+    margin-left: 0;
+
+  }
+  .planh22,
+  .planh33{
+    margin-left: 0;
+  }
+  .planh1{
+    margin-left: 0rem;
+  }
+  
+  /* Adjustments for plan content */
+  
+  
+  /* Adjustments for buttons */
+  .ybtn1,
+  .ybtn11 {
+    width: 100%; /* Adjust width for full width on mobile */
+    height: 3rem;
+    color: white;
+    background-color: rgb(75, 73, 73);
+    margin-top: 2rem; /* Adjust margin for spacing */
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .ybtn1:hover,
+  .ybtn11:hover {
+    background-color: rgb(57, 56, 56);
+  }
+  
+ 
+ 
+  
+  
+  
+  
 }

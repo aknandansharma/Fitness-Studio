@@ -44,10 +44,15 @@ function About() {
                         necessitatibus repudiandae commodi, quaerat a nostrum,
                         illum deleniti magni repellat, quidem nihil eaque!
                         Sequi.
+
+                        <div className="play-btn">
+								<button ><i className="fa-solid fa-play" href="https://www.youtube.com/watch?v=EO-5Fnh13kw" ></i></button>
+                             
+							 </div>
                     </p>
-                    <a href='/' class='btn'>
-                        Read More
-                    </a>
+                    
+                        
+                       
                 </div>
             </section>
           {/* about us  end*/}
