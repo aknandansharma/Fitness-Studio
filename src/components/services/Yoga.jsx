@@ -9,8 +9,8 @@ import Img3 from "../../assets/img/gallery3.jpg";
 import Img4 from "../../assets/img/gallery4.jpg";
 import Img5 from "../../assets/img/gallery5.jpg";
 import Img6 from "../../assets/img/gallery6.jpg";
-import Img7 from '../components/assets/img/woman1.jpg';
-import Img8 from '../components/assets/img/woman2.jpg';
+// import Img7 from '../components/assets/img/woman1.jpg';
+// import Img8 from '../components/assets/img/woman2.jpg';
 
 function Yoga() {
 	return (
@@ -168,6 +168,25 @@ function Yoga() {
 			</div>
 			{/* yoga courses detail end */}
 
+			<div className="blog">
+				<h1>Blog</h1>
+				<div className="mainblog">
+					<div className="mainblog1">
+						
+					</div>
+					<div className="mainblog2">
+						<h2>Bend your mind, inspire yourself</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							 Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+							 <div className="play-btn">
+								<button ><i className="fa-solid fa-play" href="https://www.youtube.com/watch?v=EO-5Fnh13kw" ></i></button>
+                             
+							 </div>
+					</div>
+				</div>
+
+			</div>
+
 			{/* yoga price planning  start */}
 			<div className="pricediv">
 				<span className="span">
@@ -221,7 +240,7 @@ function Yoga() {
 			{/* yoga price planning  end */}
 
 
-			
+
 			{/* <div className='mainblog'>
                 
                 <div className='blog1'>
