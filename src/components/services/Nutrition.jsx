@@ -7,6 +7,7 @@ import Img1 from "../../assets/img/l3.png";
 function Nutrition() {
 	return (
 		<>
+		{/* nutrition start */}
 			<div className="mainhead">
 				<div className="head1">
 					<img
@@ -29,6 +30,9 @@ function Nutrition() {
 					/>
 				</div>
 			</div>
+			{/* nutrition end */}
+
+			{/* nutrition start deatil */}
 			<div className="detail">
 				<h1 className="detail-heading">Nutrition Details</h1>
 				<div className="detail-box">
@@ -71,6 +75,10 @@ function Nutrition() {
 					</div>
 				</div>
 			</div>
+
+			{/* nutrition end detail */}
+
+			{/* maincourses start */}
 			<div className="maincourses">
 				<h1 className="detail-heading">Fitness & Nutrition Courses</h1>
 				<div>
@@ -107,6 +115,10 @@ function Nutrition() {
 					</div>
 				</div>
 			</div>
+
+			{/* maincourses end */}
+
+			{/* price planing start  */}
 			<div className="pricediv">
 				<span className="span">
 					{" "}
@@ -156,6 +168,7 @@ function Nutrition() {
 					</div>
 				</div>
 			</div>
+			{/* price planing end  */}
 		</>
 	);
 }
