@@ -1,7 +1,9 @@
 footer {
 	color: #555555;
 	padding: 20px;
-	background: linear-gradient(rgba(252, 248, 248, 0.523), rgb(171, 171, 189));
+	/* background: linear-gradient(rgba(252, 248, 248, 0.523), rgb(171, 171, 189)); */
+	background-color: rgb(79, 76, 76);
+	color: white;
 }
 
 .footer_container {

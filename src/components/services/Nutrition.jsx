@@ -7,6 +7,7 @@ import Img1 from "../../assets/img/l3.png";
 function Nutrition() {
 	return (
 		<>
+		{/* nutrition start */}
 			<div className="mainhead">
 				<div className="head1">
 					<img
@@ -29,6 +30,9 @@ function Nutrition() {
 					/>
 				</div>
 			</div>
+			{/* nutrition end */}
+
+			{/* nutrition start deatil */}
 			<div className="detail">
 				<h1 className="detail-heading">Nutrition Details</h1>
 				<div className="detail-box">
@@ -71,6 +75,10 @@ function Nutrition() {
 					</div>
 				</div>
 			</div>
+
+			{/* nutrition end detail */}
+
+			{/* maincourses start */}
 			<div className="maincourses">
 				<h1 className="detail-heading">Fitness & Nutrition Courses</h1>
 				<div>
@@ -107,6 +115,30 @@ function Nutrition() {
 					</div>
 				</div>
 			</div>
+
+			{/* maincourses end */}
+
+
+			<div className="blog">
+				<h1>Blog</h1>
+				<div className="mainblog">
+					<div className="mainblog1">
+						
+					</div>
+					<div className="mainblog2">
+						<h2>Unlock your potential with good nutrition</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							 Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+							 <div className="play-btn">
+								<button ><i className="fa-solid fa-play" href="https://www.youtube.com/watch?v=EO-5Fnh13kw" ></i></button>
+                             
+							 </div>
+					</div>
+				</div>
+
+			</div>
+
+			{/* price planing start  */}
 			<div className="pricediv">
 				<span className="span">
 					{" "}
@@ -156,6 +188,7 @@ function Nutrition() {
 					</div>
 				</div>
 			</div>
+			{/* price planing end  */}
 		</>
 	);
 }

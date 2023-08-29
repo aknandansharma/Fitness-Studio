@@ -49,12 +49,12 @@ body{
 .heading{
            font-size: 3.3rem;
            font-weight: 2rem;
-         
+           text-shadow: 2px 2px 5px black;
            margin-top: 2rem;
            /* color: rgb(57, 56, 56); */
            color:black;
-            text-shadow: 0 9px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
-           
+            /* text-shadow: 0 9px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+            */
            
            
 }
@@ -148,7 +148,7 @@ body{
 .heading7{
     color: black;
     font-size: 2.5rem;
-   
+    text-shadow: 2px 2px 5px black;
     margin-top: 4rem;
     justify-content: center;
     margin-left: 40rem;
@@ -158,6 +158,7 @@ body{
     font-size: 2.5rem;
    margin-left: 38rem;
    margin-top: 5rem;
+   text-shadow: 2px 2px 5px black;
    
 }  
 .ourcourse{
@@ -187,6 +188,7 @@ body{
 .ourcourse2 h1{
  font-size: 1.1rem;
  margin-top: 8rem;
+
  color: rgb(57, 56, 56);
 
 }
@@ -208,12 +210,14 @@ body{
             margin-left: 43rem;
             margin-top: 5rem;
             font-weight: 500;
+          
 }
 .heading10{
    color: black;
     font-size: 2.5rem;
     margin-left: 28rem;
     margin-top: 3rem;
+    text-shadow: 2px 2px 5px black;
     
 }
 .bigdiv{
@@ -233,7 +237,7 @@ body{
 .bigdiv h1{
    
     color: black;
-   
+    text-shadow: 2px 2px 5px black;
     font-size: 2.7rem;
     margin-top: 3rem;
     margin-left: 33rem;
@@ -306,6 +310,7 @@ body{
     color: white;
     margin-left: 9rem;
     margin-top: 1rem;
+    text-shadow: 2px 2px 5px white;
     
 }
 .readbtn{
@@ -322,17 +327,20 @@ body{
 }
 .pricediv{
     width: 100%;
-    height: 20vh;
-    background: linear-gradient(rgba(252, 248, 248, 0.523), rgb(171, 171, 189) );
-
+    height: 10vh;
+    margin-top: 4rem;
+   
+  
+    /* background: linear-gradient(rgba(252, 248, 248, 0.523), rgb(171, 171, 189) ); */
+   /* background-color: white; */
 
 }
 .span h1{
     width: 20rem;
     height: 5rem;
-   margin-top: 6rem;
-    margin-left: 43rem;
-   
+   margin-top: 3rem;
+    margin-left: 40rem;
+    text-shadow: 2px 2px 5px black;
     font-size: 3rem;
     color: black;
     opacity: 1;
@@ -340,13 +348,13 @@ body{
 .pricedivmain {
     width: 100%;
     height: 130vh;
-    background: linear-gradient(rgba(252, 248, 248, 0.523), rgb(171, 171, 189) );
-    
+    /* background: linear-gradient(rgba(252, 248, 248, 0.523), rgb(171, 171, 189) );
+     */
    
     
 }
 .priceheading{
-    color: rgb(29, 28, 28);
+    color: rgb(43, 42, 42);
     
     font-weight: 500;
     margin-top: 7rem;
@@ -354,7 +362,7 @@ body{
 }
 .priceheading1{
     color: black;
-    
+    text-shadow: 2px 2px 5px black;
    font-size: 2.5rem;
     margin-top: 4rem;
     margin-left: 34rem;
@@ -471,68 +479,98 @@ color: black ;
 margin-top: 2rem;
 margin-left: 7rem;
 border: none;
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 .ybtn11:hover{
 background-color: rgb(57, 56, 56) ; 
 }
+
 .blog{
     width: 100%;
     height: 100vh;
-    background: linear-gradient(rgba(252, 248, 248, 0.523), rgb(171, 171, 189) );
-   
+    /* background-color: aqua; */
+}
+.blog h1{
+    color: black;
+    text-shadow: 2px 2px 5px black;
+   font-size: 2.5rem;
+    margin-top: 4rem;
+    margin-left: 46rem;   
+}
+
+
+.mainblog1{
+      width: 500px;
+      height: 500px;
+      background-color: gray;
+      background: url(https://askproject.net/savasa/wp-content/uploads/sites/19/2021/08/tabitha-turner-vuQP4z9B9Ac-unsplash-768x768.jpg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      
+       box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); ;
+       box-shadow: 6px 6px 10px 10px goldenrod;
+    
+}
+.mainblog2{
+    width: 500px;
+    height: 400px;
+    
+    margin: 1rem;
+    margin-left: 6rem;
+}
+.mainblog2 h2{
+                font-size: 3rem;
+                margin-top: 5rem;
 }
 .mainblog{
     display: flex;
+    margin-left: 13rem;
+    margin-top: 5rem;
 }
-.blog1{
-    width: 450px;
-    height: 450px;
-    background-color: rgb(159, 194, 224);
-    margin-left: 11rem;
-    margin-top: 4rem;
-    background-image: url(https://askproject.net/savasa/wp-content/uploads/sites/19/2021/08/woman-practising-yoga-indoors-5EDJ8JT.jpg);
-   background-repeat: no-repeat;
-   background-size: contain;
-  
+.play-btn{
+    background: rgb(54, 50, 49);
+    color: white;
+    font-size: 30px;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    margin: auto;
+    cursor: pointer;
+  margin-top: 4rem;
+    text-align: center;
+    border-radius: 50%;
+    margin-left: 4rem;
+   
 }
-.blog2{
-    width: 400px;
-    height: 200px;
-    background-color: rgb(159, 194, 224);
-    margin-left: 11rem;
-    margin-top: 4rem;
-    background-image: url(https://askproject.net/savasa/wp-content/uploads/sites/19/2021/08/woman-practising-yoga-indoors-5EDJ8JT.jpg);
-   background-repeat: no-repeat;
-   background-size: contain;
-}
-/* .blogbtn1
-{
-          width: 5rem;
-          height: 5rem;
-          margin-top: 14rem;
-          margin-left: 13rem;
-          background-color: aliceblue;
-          color: black;
-} */
-.btn-ripple{
-         outline:  none; 
-         display: block;
+.play-btn i{line-height: 100px; margin-left: 10px; margin-bottom: 10px;}
+.play-btn:before,.play-btn:after {
+    content: '';
+    border-radius: 50%;
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    right: -20px;
+    bottom: -10px;
 
-          margin-top: 14rem;
-          margin-left: 13rem;
-          background-color: red;
-          /* color: rgb(251, 245, 245); */
-          border-radius: 10px;
-          border: 2px solid white;
-          cursor: pointer;
-          color: white;
-          /* border: 2px solid white; */
-          animation-name: ripple;
-          animation-iteration-count: infinite;
-          animation-duration: 2.5s;
-          animation-fill-mode: both;
-}      
+
+    opacity: 0;
+    border: 3px solid   goldenrod;
+   animation: animate 1.5s linear infinite;
+} 
+.play-btn:after{
+    animation-delay: 0.5s;
+}
+@keyframes animate{
+    0%{
+        transform: scale(.5);
+    }
+    50%{
+       opacity: 1;
+    }
+   100%{
+        transform: scale(1.5);
+    }
+}            
 
 @media only screen and (max-width: 500px){
     .maindiv{
