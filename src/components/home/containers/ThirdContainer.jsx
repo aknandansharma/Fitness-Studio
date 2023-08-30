@@ -1,8 +1,8 @@
 import React from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import trainer from "../../assets/trainer.jpg";
-import "./home.css";
+import trainer from "../../../assets/trainer.jpg";
+import "../home.css";
 
 const ThirdContainer = () => {
 	return (

@@ -6,6 +6,9 @@
 	position: relative;
 	height: 90vh;
 	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .home_first_container video {
@@ -34,29 +37,31 @@
 		top: 0px;
 	}
 	25% {
-		top: 150px;
+		top: 120px;
 	}
 	75% {
 		top: 50px;
 	}
 	100% {
-		top: 100px;
+		top: 80px;
 	}
 }
 
-.home_first_container .contents h1 {
+.home_first_container .contents p:first-child {
+
 	font-size: 3.5rem;
 	font-weight: 700;
 	/* margin-bottom: 1rem; */
 	background: linear-gradient(to right, #f1f0f1, #6c0a8a);
 	-webkit-background-clip: text;
 	color: transparent;
+	
 }
 
 .home_first_container .contents p {
 	font-size: 2rem;
 	font-weight: 500;
-	margin: 1rem 1.5rem;
+	margin: 0rem 1.5rem;
 	background: linear-gradient(to right, #f4f2f3, #48025d);
 	-webkit-background-clip: text;
 	color: transparent;
@@ -78,7 +83,7 @@
 	box-shadow: 2px 2px 5px black;
 }
 
-.home_first_container .content button:hover {
+.home_first_container .contents button:hover {
 	background-color: rgb(171, 171, 189);
 	transform: scale(1.06);
 }
@@ -132,7 +137,19 @@
 	display: block;
 	color: rgb(8, 9, 15);
 }
-
+.carousel-card:hover .hide h3{
+	font-size: large;
+	font-weight: 600;
+	padding: 5px;
+}
+.carousel-card:hover .hide button {
+	background-color: rgb(101, 78, 229);
+	color: white;
+	padding: 5px;
+	border-radius: 5px;
+	font-size: small;
+	/* box-shadow: 2px 2px 5px black; */
+}
 #home_third_container {
 	min-height: 100vh;
 	padding: 1rem;
@@ -196,6 +213,7 @@
 	text-align: center;
 	padding: 10px 60px 50px 60px;
 	height: 100vh;
+
 }
 
 #home_fourth_container h1 {
@@ -224,6 +242,7 @@
 	justify-content: center;
 	flex-direction: column;
 	flex-wrap: wrap;
+	padding: 50px 10px;
 	gap: 2rem;
 }
 #home_fourth_container .carousel-card img {
@@ -324,7 +343,7 @@
 }
 
 @media only screen and (max-width: 768px) {
-	.home_first_container .content {
+	.home_first_container .contents {
 		text-align: center;
 		padding: 1rem 0;
 		position: relative;
@@ -340,17 +359,17 @@
 			top: 0px;
 		}
 		25% {
-			top: 100px;
+			top: 80px;
 		}
 		75% {
 			top: 50px;
 		}
 		100% {
-			top: 70px;
+			top: 120px;
 		}
 	}
 
-	.home_first_container .content h1 {
+	.home_first_container .contents h1 {
 		font-size: 1.5rem;
 		margin-bottom: 1rem;
 		background: linear-gradient(to right, #f1f0f1, #6c0a8a);
@@ -358,7 +377,7 @@
 		color: transparent;
 	}
 
-	.home_first_container .content p {
+	.home_first_container .contents p {
 		font-size: 1rem;
 		margin-bottom: 1.5rem;
 		background: linear-gradient(to right, #f4f2f3, #48025d);
@@ -369,7 +388,7 @@
 		animation: gradient 5s infinite;
 	}
 
-	.home_first_container .content button {
+	.home_first_container .contents button {
 		background-color: #f4f2f3;
 		color: black;
 		border: none;

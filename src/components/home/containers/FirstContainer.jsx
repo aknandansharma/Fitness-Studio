@@ -1,14 +1,12 @@
 import React from "react";
 //import "./Home.css";
 //import fitness_photo from "../../assets/fitness.jpg";
-import yoga from "../../assets/yoga.jpg";
+//import yoga from "../../../assets/yoga.jpg";
 //import background from "../../assets/image_design.png";
-import Slider from "react-slick";
+//import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
-import { motion } from "framer-motion";
-import "./home.css";
+import "../home.css";
 
 const FirstContainer = () => {
 	return (
@@ -28,13 +26,13 @@ const FirstContainer = () => {
 				Your browser does not support the video tag.
 			</video>
 			<div className="contents">
-				<h1>Pushing Boundaries, Breaking Limits.</h1>
+				<p>Pushing Boundaries, Breaking Limits.</p>
 				<p>
 					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus
 					molestiae atque voluptatem impedit exercitationem nisi cupiditate
 				</p>
 				<button>
-					<a href="#home_second_container">Why Us?</a>
+					<a href="/about">Why Us?</a>
 				</button>
 			</div>
 		</section>
