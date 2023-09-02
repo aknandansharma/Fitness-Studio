@@ -4,6 +4,21 @@
 	height: 40rem;
 	display: flex;
 }
+.cardpara{
+    
+    font-size: 20px;
+  }
+  .card-title{
+    
+    text-align: center;
+    font-size:large;
+  }
+  .pilatestext{
+	width: 70vh;
+  }
+.whycard{
+    width: 70vh;
+  }
 .head1 {
 	width: 250px;
 	height: 40rem;
@@ -80,6 +95,7 @@
 	font-size: 3rem;
 	margin-top: 2rem;
 }
+
 .heading3 {
 	font-size: 3rem;
 	margin-top: 2rem;
@@ -136,6 +152,12 @@
 	background-size: contain;
 	background-repeat: no-repeat;
 }
+.cardy{
+    width: 400px;
+    height: 450px;
+    margin: 1rem;
+    margin-left: 2rem;
+  }
 .maincourses {
 	width: 100%;
 	height: 40rem;
@@ -190,15 +212,10 @@
 }
 
 
-.mainblog1{
-      width: 500px;
-      height: 500px;
-      background-color: gray;
-      background: url(https://media.istockphoto.com/id/1418282970/photo/pretty-woman-looking-to-sideways-while-drinking-fruit-detox-juice-in-the-kitchen-at-home.webp?b=1&s=170667a&w=0&k=20&c=xkAXTEO34Ty629vjBqcIkvW_mq3GHmSSkvLRcTgH1aw=);
-      background-repeat: no-repeat;
-      background-size: contain;
+.imgT{
+    
       
-       box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); ;
+       box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
        box-shadow: 6px 6px 10px 10px goldenrod;
     
 }
@@ -233,6 +250,7 @@
     margin-left: 4rem;
    
 }
+
 .play-btn i{line-height: 100px; margin-left: 10px; margin-bottom: 10px;}
 .play-btn:before,.play-btn:after {
     content: '';
@@ -262,566 +280,50 @@
         transform: scale(1.5);
     }
 }            
-.pricediv{
-    width: 100%;
-    height: 10vh;
-    margin-top: 4rem;
-   
-  
-    /* background: linear-gradient(rgba(252, 248, 248, 0.523), rgb(171, 171, 189) ); */
-   /* background-color: white; */
 
-}
-.span h1{
-    width: 20rem;
-    height: 5rem;
-   margin-top: 3rem;
-    margin-left: 40rem;
-    text-shadow: 2px 2px 5px black;
-    font-size: 3rem;
-    color: black;
-    opacity: 1;
-}
-.pricedivmain {
-    width: 100%;
-    height: 130vh;
-    /* background: linear-gradient(rgba(252, 248, 248, 0.523), rgb(171, 171, 189) );
-     */
-   
-    
-}
-.priceheading{
-    color: rgb(43, 42, 42);
-    
-    font-weight: 500;
-    margin-top: 7rem;
-    margin-left: 43rem;
-}
-.priceheading1{
-    color: black;
-    text-shadow: 2px 2px 5px black;
-   font-size: 2.5rem;
-    margin-top: 4rem;
-    margin-left: 34rem;
-}
-.plan{
-    display: flex;
-    margin-top: 4rem;
-   
-}
-.plan1{
-    width: 390px;
-    height: 630px;
-    background: linear-gradient(rgba(252, 248, 248, 0.523), rgb(171, 171, 189) );
-    margin-top: 4rem;
-    margin-left: 9rem;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.plan1:hover{
-    border: 1px solid rgb(63, 66, 66);;
-}
-.plan2{
-    width: 390px;
-    height: 680px;
-    background-color: rgb(63, 66, 66);
-    margin-top: 4rem;
-    margin: 1rem;
-}
-
-.plan3{
-    width: 390px;
-    height: 630px;
-    background: linear-gradient(rgba(252, 248, 248, 0.523), rgb(171, 171, 189) );
-    margin-top: 4rem;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-    
-    
-}
-.plan3:hover{
-    border: 1px solid rgb(63, 66, 66);;
-}
-.planh1{
-           font-size: 1.5rem;
-           color: black;
-           margin-left: 7rem;
-           margin-top: 3rem;
-           font-weight: 500;
-}
-.planp{
-    color: rgb(55, 52, 52);
-    font-size: 1.1rem;
-    margin-top: 3rem;
-    margin-left: 3rem;
-}
-.planh2{
-    margin-top: 3rem;
-    margin-left: 6rem;
-    font-size: 2.5rem;
-    /* font-weight: bold; */
-
-}
-.planh3{
-    margin-top: 1.5rem;
-    margin-left: 9rem;
-     
-}
-.ybtn1{
-    width: 11rem;
-    height: 3rem;
-    color: white;
-    /* background-color: rgb(57, 56, 56) ; */
-    background-color: rgb(75, 73, 73) ;
-    margin-top: 2rem;
-    margin-left: 7rem;
-    border: none;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.ybtn1:hover{
-      background-color: rgb(57, 56, 56) ; 
-}
-.planh11{
-    font-size: 1.5rem;
-   color: white;
-    margin-left: 7rem;
-    margin-top: 6rem;
-    font-weight: 500;
-}
-.planpp{
-color: white;
-font-size: 1.1rem;
-margin-top: 3rem;
-margin-left: 3rem;
-}
-.planh22{
-margin-top: 3rem;
-margin-left: 6rem;
-font-size: 2.5rem;
-color: white;
-/* font-weight: bold; */
-
-}
-.planh33{
-    color: white;
-margin-top: 1.5rem;
-margin-left: 9rem;
-
-}
-.ybtn11{
-width: 11rem;
-height: 3rem;
-background-color: white;
-/* background-color: rgb(57, 56, 56) ; */
-color: black ;
-margin-top: 2rem;
-margin-left: 7rem;
-border: none;
-
-}
-.ybtn11:hover{
-background-color: rgb(57, 56, 56) ; 
-}
-
-@media only screen and (max-width: 500px){
-
-	/* Main Heading Section */
-.mainhead {
-	width: 100%;
-	background: linear-gradient(rgba(252, 248, 248, 0.523), rgb(171, 171, 189));
-	height: auto; /* Adjust height for content */
-	display: flex;
-	flex-direction: column; /* Stack elements vertically on mobile */
-	align-items: center; /* Center content horizontally */
-  }
-  
-  .head1 {
-	width: 100%; /* Take full width on mobile */
-	height: auto; /* Allow content to determine height */
-  }
-  
-  .head3 {
-	width: 100%; /* Take full width on mobile */
-	height: auto; /* Allow content to determine height */
-	margin: 1rem;
-  }
-  
-  .head4 {
-	width: 100%; /* Take full width on mobile */
-	height: auto; /* Allow content to determine height */
-  }
-  
-  .img1 {
-	margin-top: 2rem; /* Adjust margin for spacing */
-	width: 100%; /* Take full width on mobile */
-	height: auto; /* Allow content to determine height */
-	animation: floatImage 4s ease-in-out infinite;
-  }
-  
-  .img2 {
-	width: 100%; /* Take full width on mobile */
-	height: auto; /* Allow content to determine height */
-	margin-top: 2rem; /* Adjust margin for spacing */
-	animation: floatImage 4s ease-in-out infinite;
-  }
-  
-  .heading {
-	font-size: 2rem; /* Adjust font size for smaller screens */
-	margin-left: 1rem; /* Adjust margin for spacing */
-	margin-top: 4rem; /* Adjust margin for spacing */
-	text-align: center; /* Center text */
-  }
-  
-  .span {
-	color: green;
-	text-shadow: 1px 1px 3px green; /* Adjust shadow for smaller screens */
-  }
-  
-  .span1 {
-	color: goldenrod;
-	text-shadow: 1px 1px 3px goldenrod; /* Adjust shadow for smaller screens */
-  }
-  
-  /* Detail Section */
-  .detail {
-	width: 100%;
-	height: auto; /* Allow content to determine height */
-	background: linear-gradient(rgba(252, 248, 248, 0.523), rgb(171, 171, 189));
-  }
-  
-  .detail-heading {
-	font-size: 1.5rem; /* Adjust font size for smaller screens */
-	margin-left: 1rem; /* Adjust margin for spacing */
-	margin-top: 2rem; /* Adjust margin for spacing */
-	text-align: center; /* Center text */
-  }
-  
-  /* Animation Keyframes */
-  @keyframes floatImage {
-	0% {
-	  transform: translateY(0);
+@media (max-width: 600px) {
+	.heading{
+	font-size: 9vw;
 	}
-	50% {
-	  transform: translateY(-1.5rem); /* Adjust translateY value for smaller screens */
+	.detail-box1{
+		display: flex;
+		flex-direction: column;
 	}
-	100% {
-	  transform: translateY(0);
+	.no-display{
+		display: none;
 	}
-  }
-  .detail {
-	width: 100%;
-	height: auto; /* Allow content to determine height */
-	background: linear-gradient(rgba(252, 248, 248, 0.523), rgb(171, 171, 189));
-  }
-  
-  .detail-heading {
-	font-size: 2rem; /* Adjust font size for smaller screens */
-	text-align: center; /* Center text */
-	margin-top: 2rem; /* Adjust margin for spacing */
-  }
-  
-  .detail-box {
-	display: flex;
-	flex-direction: column; /* Stack elements vertically on mobile */
-	align-items: center; /* Center content horizontally */
-  }
-  
-  .detail-box1 {
-	width: 100%; /* Take full width on mobile */
-	height: auto; /* Allow content to determine height */
-	margin: 1rem; /* Adjust margin for spacing */
-	text-align: center; /* Center text */
-  }
-  
-  .detail-box1 h1 {
-	font-size: 2rem; /* Adjust font size for smaller screens */
-	margin-top: 1rem; /* Adjust margin for spacing */
-  }
-  
-  .heading3 {
-	font-size: 2rem; /* Adjust font size for smaller screens */
-	font-weight: bold;
-	color: black;
-	text-align: center; /* Center text */
-	margin: 1rem; /* Adjust margin for spacing */
-  }
-  
-  .heading4 {
-	font-size: 1.5rem; /* Adjust font size for smaller screens */
-	color: black;
-	text-align: center; /* Center text */
-	margin: 1rem; /* Adjust margin for spacing */
-  }
-  
-  .heading5 {
-	font-size: 1.2rem; /* Adjust font size for smaller screens */
-	color: black;
-	text-align: center; /* Center text */
-	margin: 0.5rem 0; /* Adjust margin for spacing */
-  }
-  
-  .pheading,
-  .pheading1 {
-	color: grey;
-	text-align: center; /* Center text */
-	margin: 0.5rem 0; /* Adjust margin for spacing */
-  }
-  
-  .detail-box2 {
-	width: 100%; /* Take full width on mobile */
-	height: auto; /* Allow content to determine height */
-	margin: 1rem; /* Adjust margin for spacing */
-	text-align: center; /* Center text */
-  }
-  
-  .detail-content,
-  .detail-content1 {
-	width: 100%; /* Take full width on mobile */
-	height: auto; /* Allow content to determine height */
-	margin: 1rem; /* Adjust margin for spacing */
-	background-size: contain;
-	background-repeat: no-repeat;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
- 
-  .maincourses {
-	width: 100%;
-	height: auto; /* Allow content to determine height */
-	background: linear-gradient(rgba(252, 248, 248, 0.523), rgb(171, 171, 189));
-  }
-  
-  .cardmain {
-	display: flex;
-	flex-direction: column; /* Stack cards vertically on mobile */
-	align-items: center; /* Center content horizontally */
-	margin: 2rem 0; /* Adjust margin for spacing */
-  }
-  
-  .card {
-	width: 100%; /* Take full width on mobile */
-	height: auto; /* Allow content to determine height */
-	margin: 1rem 0; /* Adjust margin for spacing */
-	text-align: center; /* Center text */
-	/* Remove the margin-left */
-  }
-  
-  .cardheading {
-	font-size: 1.3rem; /* Adjust font size for smaller screens */
-	color: black;
-	margin-top: 1rem; /* Adjust margin for spacing */
-	text-shadow: 2px 2px 5px black;
-  }
-  
-  .cardbtn {
-	width: 100%; /* Take full width on mobile */
-	height: 2.5rem;
-	color: white;
-	background-color: rgb(75, 73, 73);
-	margin-top: 1rem; /* Adjust margin for spacing */
-	border: none;
-	margin-left:0rem;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-  
-  .cardimg {
-	width: 100%; /* Take full width on mobile */
-	height: auto; /* Allow content to determine height */
-  }
-
-  
-  
-  .pricediv {
-	width: 100%;
-	height: auto; /* Allow content to determine height */
-	margin-top: 2rem; /* Adjust margin for spacing */
-	padding: 2rem; /* Add padding for spacing */
-  }
-  
-  .span h1 {
-	width: auto; /* Allow content to determine width */
-	height: auto; /* Allow content to determine height */
-	margin: 2rem auto; /* Center horizontally and adjust margin for spacing */
-	text-shadow: 2px 2px 5px black;
-	font-size: 2.5rem; /* Adjust font size for smaller screens */
-	color: black;
-	opacity: 1;
-	text-align: center; /* Center text */
-  }
-  
-  .pricedivmain {
-	width: 100%;
-	height: auto; /* Allow content to determine height */
-	padding: 2rem; /* Add padding for spacing */
-  }
-  
-  .priceheading {
-	color: rgb(43, 42, 42);
-	font-weight: 500;
-	margin-top: 4rem; /* Adjust margin for spacing */
-	text-align: center; /* Center text */
-  }
-  
-  .priceheading1 {
-	color: black;
-	text-shadow: 2px 2px 5px black;
-	font-size: 2rem; /* Adjust font size for smaller screens */
-	margin-top: 2rem; /* Adjust margin for spacing */
-	text-align: center; /* Center text */
-  }
-  
-  .plan {
-	display: flex;
-	flex-direction: column; /* Stack items vertically on mobile */
-	align-items: center; /* Center items horizontally */
-	margin-top: 2rem; /* Adjust margin for spacing */
-  }
-  
-  .plan1,
-  .plan2,
-  .plan3 {
-	width: 100%; /* Take full width on mobile */
-	height: auto; /* Allow content to determine height */
-	margin: 1rem 0; /* Adjust margin for spacing */
-	padding: 1rem; /* Add padding for spacing */
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-  
-  .plan1:hover,
-  .plan3:hover {
-	border: 1px solid rgb(63, 66, 66);
-  }
-  
-  .planh1,
-  .planh11 {
-	font-size: 1.5rem;
-	color: black;
-	margin-top: 1rem; /* Adjust margin for spacing */
-	font-weight: 500;
-	text-align: center; /* Center text */
-  }
-  
-  .planh2,
-  .planh22 {
-	margin-top: 1rem; /* Adjust margin for spacing */
-	font-size: 2rem; /* Adjust font size for smaller screens */
-	color: black; /* Use black color on light background */
-	text-align: center; /* Center text */
-  }
-  
-  .planh3,
-  .planh33 {
-	margin-top: 1rem; /* Adjust margin for spacing */
-	text-align: center; /* Center text */
-  }
-  
-  .ybtn1,
-  .ybtn11 {
-	width: 18rem;
-	height: 3rem;
-	color: white;
-	background-color: rgb(75, 73, 73);
-	margin-top: 1rem; /* Adjust margin for spacing */
-	margin-left: auto;
-	margin-right: auto; /* Center horizontally */
-	border: none;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-  
-  .ybtn1:hover,
-  .ybtn11:hover {
-	background-color: rgb(57, 56, 56);
-  }
-
-  .blog {
-	width: 100%;
-	padding: 2rem; /* Add padding for spacing */
-	text-align: center; /* Center text */
-  }
-  
-  .blog h1 {
-	color: black;
-	text-shadow: 2px 2px 5px black;
-	font-size: 2rem; /* Adjust font size for smaller screens */
-	margin-top: 2rem; /* Adjust margin for spacing */
-  }
-  
-  .mainblog1 {
-	width: 100%; /* Take full width on mobile */
-	height: auto; /* Allow content to determine height */
-	background-color: gray;
-	background: url(https://askproject.net/savasa/wp-content/uploads/sites/19/2021/08/tabitha-turner-vuQP4z9B9Ac-unsplash-1024x1024.jpg);
-	background-repeat: no-repeat;
-	background-size: contain;
-	margin: 2rem auto; /* Center horizontally and add margin for spacing */
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-  
-  .mainblog2 {
-	width: 100%; /* Take full width on mobile */
-	height: auto; /* Allow content to determine height */
-	margin: 2rem auto; /* Center horizontally and add margin for spacing */
-	text-align: center; /* Center text */
-  }
-  
-  .mainblog2 h2 {
-	font-size: 2rem; /* Adjust font size for smaller screens */
-	margin-top: 2rem; /* Adjust margin for spacing */
-  }
-  
-  .mainblog {
-	display: flex;
-	flex-direction: column; /* Stack items vertically on smaller screens */
-	align-items: center; /* Center horizontally */
-	margin: 2rem auto; /* Center horizontally and add margin for spacing */
-  }
-  
-  .play-btn {
-	background: rgb(54, 50, 49);
-	color: white;
-	font-size: 20px; /* Adjust font size for smaller screens */
-	width: 80px; /* Adjust width for smaller screens */
-	height: 80px; /* Adjust height for smaller screens */
-	margin: 2rem auto; /* Center horizontally and add margin for spacing */
-	cursor: pointer;
-	text-align: center;
-	border-radius: 50%;
-  }
-  
-  .play-btn i {
-	line-height: 80px; /* Adjust line height for smaller screens */
-	margin-left: 5px; /* Adjust margin for spacing */
-	margin-bottom: 5px; /* Adjust margin for spacing */
-  }
-  
-  .play-btn:before,
-  .play-btn:after {
-	content: '';
-	border-radius: 50%;
-	position: absolute;
-	left: -10px; /* Adjust position for smaller screens */
-	top: -10px; /* Adjust position for smaller screens */
-	right: -10px; /* Adjust position for smaller screens */
-	bottom: -5px; /* Adjust position for smaller screens */
-	opacity: 0;
-	border: 2px solid goldenrod; /* Adjust border thickness for smaller screens */
-	animation: animate 1.5s linear infinite;
-  }
-  
-  .play-btn:after {
-	animation-delay: 0.5s;
-  }
-  
-  @keyframes animate {
-	0% {
-	  transform: scale(0.5);
+	.img2{
+		display: none;
 	}
-	50% {
-	  opacity: 1;
+	
+	.head4 img{
+		position: absolute;
+		left: 0%;
+		bottom: 20%;
+		font-weight: 200;
+		width: 200px;
 	}
-	100% {
-	  transform: scale(1.5);
+	.detail-box{
+		display: flex;
+		flex-direction: column;
 	}
-  }
-  
-  
-  
+	.detail-heading{
+		position: absolute;
+		right: 30%;
+		font-size: x-large;
+	}
+	.detail-content{
+		width: 300px;
+		
+	}
+	.detail-content1{
+		width: 300px;
+		position: relative;
+		bottom: 15%;
+		right: 10%;
+	}
+	.detail-box2{
+	display: none;
+	}
+	
 }
