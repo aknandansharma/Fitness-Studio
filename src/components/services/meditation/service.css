@@ -4,8 +4,21 @@
     padding: 0;
     box-sizing: border-box;
   }
+  .plan{
+    display: flex;
+    margin-top: 4rem;
+   
+}
+
+
   .banner {
     background: linear-gradient(rgba(252, 248, 248, 0.523), rgb(171, 171, 189) );
+  }
+  .abutton{
+    background-color: goldenrod;
+  }
+  .buttoncode2{
+    background-color: #4b4949;
   }
   .cardy{
     width: 400px;
@@ -50,8 +63,12 @@
 .textDesign1{
   font-weight: bold;
   font-size: 2rem;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); 
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
   font-family: 'Cormorant Garamond';
+
+}
+.textshadow2{
+  text-shadow: 1px 1px 2px black;
 }
 .paraDesign1{
   font-size: 1.3rem;
