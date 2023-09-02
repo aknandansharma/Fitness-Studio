@@ -7,6 +7,12 @@
   .banner {
     background: linear-gradient(rgba(252, 248, 248, 0.523), rgb(171, 171, 189) );
   }
+  .abutton{
+    background-color: goldenrod;
+  }
+  .buttoncode2{
+    background-color: #4b4949;
+  }
   .imgTransform{
     transition: transform 1s;
   }
@@ -47,6 +53,7 @@
     flex-direction: row;
 
   }
+  
 .textDesign1{
   font-weight: bold;
   font-size: 2rem;
@@ -57,6 +64,9 @@
   font-size: 1.3rem;
   margin-top: 1rem;
   color: rgb(57, 56, 56);
+}
+.textshadow2{
+  text-shadow: 1px 1px 2px black;
 }
  .choose-us{
   margin-top: 15vh;

@@ -9,45 +9,6 @@ import Img5 from "../../../assets/services-assets/images/Meditationa_quick_tip5.
 import Img6 from "../../../assets/services-assets/images/MedidationHalfLotus6.webp";
 
 
-const tiers = [
-	{
-		title: "Beginner",
-		price: "2000",
-		description: [
-			"Introduction to Meditation",
-			"Basic Meditation Techniques",
-			"Building a Meditation Routine",
-			"Cultivating Inner Calm",
-		],
-		buttonText: "Join Now",
-		buttonVariant: "contained",
-	},
-	{
-		title: "Intermediated",
-		subheader: "Most popular",
-		price: "3500",
-		description: [
-			"Deepening Awareness",
-			"Emotional Regulation",
-			"Mind-Body Connection",
-			"Expanding Consciousness",
-		],
-		buttonText: "Join Now",
-		buttonVariant: "contained",
-	},
-	{
-		title: "Advanced",
-		price: "5000",
-		description: [
-			"Insight Meditation",
-			"Transcendental Practices",
-			"Meditative Inquiry",
-			"Teaching and Sharing",
-		],
-		buttonText: "Join Now",
-		buttonVariant: "contained",
-	},
-];
 
 const Zumba = () => {
 	return (
@@ -56,11 +17,10 @@ const Zumba = () => {
 			
 			>
 				<div className="me-title2">
-					<div
-						className="textDesign1"
-						style={{ color: "black" }}
+					<div	className="textDesign1 textshadow2"	style={{ color: "black" }}
 					>
-						Zumba: Shape your perfect body.
+            <span className='text-5xl' style={{color:"#3B8004"}}>Zumba</span>: Shape your <span style={{color:"#DAA520"}}>perfect body.</span>
+						  
 					</div>
 					<div className="paraDesign1">
 						<p>Experience the exhilarating rhythms and dynamic movements </p>
@@ -70,10 +30,10 @@ const Zumba = () => {
 					<div
             style={{ marginTop: '2vh', display: 'flex', flexDirection: 'row' }}
           >
-            <button className=" bg-black  hover:bg-gray-700 text-white font-bold py-2 px-4 rounded" style={{ marginRight: '15px' }}>
+            <button className=" abutton  hover:bg-orange-300 text-white font-bold py-2 px-4 rounded" style={{ marginRight: '15px' }}>
               Get Started
             </button>
-            <button className=" bg-black  hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">Learn More..</button>
+            <button className=" buttoncode2 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded">Learn More..</button>
           </div>
 				</div>
 				{
@@ -81,7 +41,7 @@ const Zumba = () => {
 						className="heroimg"
 						src={Cover}
 						alt="herobanner"
-						style={{ width: "40vw", position: "absolute", right: "0%" ,bottom:"30%y"}}
+            style={{ width: '40vw', position: 'absolute', right: '0%',bottom:"30%"}}
 					/>
 				}
 			</div>
@@ -100,7 +60,7 @@ const Zumba = () => {
               <p className="textDesign1" style={{ fontSize: '25px' }}>
                 Guided Zumba for Beginners
               </p>
-              <p className="textDesign2" style={{ fontSize: '20px',marginLeft:"5px" }}>
+              <p  style={{ fontSize: '20px',marginLeft:"5px" }}>
                 Our Guided Zumba for Beginners classes are specifically tailored for
                 those who are new to meditation. These sessions provide a gentle
                 introduction to the practice of meditation, helping participants
@@ -115,7 +75,7 @@ const Zumba = () => {
               <p className="textDesign1" style={{ fontSize: '25px' }}>
                 Intermediate Zumba Practice
               </p>
-              <p className="textDesign2" style={{ fontSize: '20px' }}>
+              <p  style={{ fontSize: '20px' }}>
                 The Intermediate Zumba Practice classes are designed to deepen your
                 meditation experience. With a focus on refining mindfulness techniques
                 and exploring different meditation approaches, participants in this
@@ -130,7 +90,7 @@ const Zumba = () => {
               <p className="textDesign1" style={{ fontSize: '25px' }}>
                 Advanced Zumba Mastery
               </p>
-              <p className="textDesign2" style={{ fontSize: '20px' }}>
+              <p  style={{ fontSize: '20px' }}>
                 Our Advanced Zumba Mastery classes are intended for seasoned
                 meditators who have established a strong foundation in meditation
                 techniques. These sessions delve into more advanced practices, offering
@@ -145,16 +105,16 @@ const Zumba = () => {
 
       <div className="choose-us banner">
           <div className="chooseus p-2 ">
-            <div className="section-one flex flex-wrap">
+            <div className="section-one flex flex-wrap w-full md:w-1/2">
               <div >
                 <img 
-                  className="imgTransform border rounded-lg shadow-2xl"
+                  className="imgTransform imgT border rounded-lg shadow-2xl"
                   src="https://images.unsplash.com/photo-1602192509154-0b900ee1f851?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bWVkaXRhdGlvbnxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"
                   alt="choose-pic"
                 />
               </div>
             </div>
-            <div className="section-two flex flex-wrap">
+            <div className="section-two flex flex-wrap w-full md:w-1/2  flex justify-center">
               <div className="">
                 <div className="textDesign1 text-center pr-20">
                   WHY CHOOSE US
@@ -168,7 +128,7 @@ const Zumba = () => {
                           stress-reducing benefits and offering tailored, transformative
                           experiences for inner peace.
                         </div>
-                        <button className=" bg-black  hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-2xl">Click Here to Join</button>
+                        <button className=" buttoncode2 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded-2xl">Click Here to Join</button>
                       </div>    
               </div>
             </div>
@@ -206,8 +166,8 @@ const Zumba = () => {
                     legs or extend them out in front of you, whichever you feel is most comfortable.
                   </p>
                   <div className="card-buttons flex flex-row space-x-2 absolute bottom-3 right-3 rounded-xl">
-                    <button className="bg-black  hover:bg-gray-700 text-white font-bold py-2 px-4 rounded ">Share</button>
-                    <button className="bg-black  hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">Learn More</button>
+                    <button className="abutton  hover:bg-orange-300 text-white font-bold py-2 px-4 rounded ">Share</button>
+                    <button className="buttoncode2 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded">Learn More</button>
                   </div>
                 </div>
               </div>
@@ -226,8 +186,8 @@ const Zumba = () => {
                     rest anywhere on your lap.
                   </p>
                   <div className="card-buttons flex flex-row space-x-2 absolute bottom-3 right-3 rounded-xl">
-                    <button className="bg-black  hover:bg-gray-700 text-white font-bold py-2 px-4 rounded ">Share</button>
-                    <button className="bg-black  hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">Learn More</button>
+                    <button className="abutton  hover:bg-orange-300 text-white font-bold py-2 px-4 rounded ">Share</button>
+                    <button className="buttoncode2 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded">Learn More</button>
                   </div>
                 </div>
               </div>
@@ -246,8 +206,8 @@ const Zumba = () => {
                     right foot should lie gently on the left foot.
                   </p>
                   <div className="card-buttons flex flex-row space-x-2 absolute bottom-3 right-3 rounded-xl">
-                    <button className="bg-black  hover:bg-gray-700 text-white font-bold py-2 px-4 rounded ">Share</button>
-                    <button className="bg-black  hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">Learn More</button>
+                    <button className="abutton  hover:bg-orange-300 text-white font-bold py-2 px-4 rounded ">Share</button>
+                    <button className="buttoncode2 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded">Learn More</button>
                   </div>
                 </div>
               </div>
@@ -267,8 +227,8 @@ const Zumba = () => {
                     All you have to do is lay down on a surface making sure your back is straight.
                   </p>
                   <div className="card-buttons flex flex-row space-x-2 absolute bottom-3 right-3 rounded-xl">
-                    <button className="bg-black  hover:bg-gray-700 text-white font-bold py-2 px-4 rounded ">Share</button>
-                    <button className="bg-black  hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">Learn More</button>
+                    <button className="abutton  hover:bg-orange-300 text-white font-bold py-2 px-4 rounded ">Share</button>
+                    <button className="buttoncode2 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded">Learn More</button>
                   </div>
                 </div>
               </div>
@@ -290,8 +250,8 @@ const Zumba = () => {
                     any tension from your muscles.
                   </p>
                   <div className="card-buttons flex flex-row space-x-2 absolute bottom-3 right-3 rounded-xl">
-                    <button className="bg-black  hover:bg-gray-700 text-white font-bold py-2 px-4 rounded ">Share</button>
-                    <button className="bg-black  hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">Learn More</button>
+                    <button className="abutton  hover:bg-orange-300 text-white font-bold py-2 px-4 rounded ">Share</button>
+                    <button className="buttoncode2 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded">Learn More</button>
                   </div>
                 </div>
               </div>
@@ -311,8 +271,8 @@ const Zumba = () => {
                     meditation practice. This pose is almost similar to the quarter lotus pose.
                   </p>
                   <div className="card-buttons flex flex-row space-x-2 absolute bottom-3 right-3 rounded-xl">
-                    <button className="bg-black  hover:bg-gray-700 text-white font-bold py-2 px-4 rounded ">Share</button>
-                    <button className="bg-black  hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">Learn More</button>
+                    <button className="abutton  hover:bg-orange-300 text-white font-bold py-2 px-4 rounded ">Share</button>
+                    <button className="buttoncode2 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded">Learn More</button>
                   </div>
                 </div>
               </div>
@@ -322,8 +282,8 @@ const Zumba = () => {
       </div>
 
 
-      <div className='priceCard'>
-        <h3 className='textDesign2 text-center pt-4'>Price List</h3>
+      {/* <div className='priceCard'>
+      <h3 className='textDesign text-center pt-4 text-3xl mt-24'>Price List</h3>
         <div className='flex flex-row flex-wrap gap-6 text-center justify-center mb-10 mt-20'>
   {tiers.map((tier,index)=>(
 
@@ -342,12 +302,54 @@ const Zumba = () => {
         </ul>
       </div>
       <div className="absolute bottom-3 left-20">
-        <button className="px-4 py-2 bg-black hover:bg-gray-700 text-white rounded-full">{tier.buttonText}</button>
+        <button className="px-4 py-2 buttoncode2 hover:bg-gray-500 text-white rounded-full">{tier.buttonText}</button>
       </div>
     </div>
   ))}
         </div>
+      </div> */}
+
+      <div className='planprice mt-9'>
+        <h2 className=' text-center text-5xl font-extrabold'>Price List</h2>
       </div>
+      <div className="plan">
+					<div className="plan1">
+						<h1 className="planh1">Regular Class</h1>
+						<p className="planp">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						</p>
+						<h2 className="planh2">Rs 40.00/Rs</h2>
+						<h3 className="planh3">Consultation</h3>
+						<h3 className="planh3"> 4 Hours Training</h3>
+						<h3 className="planh3">Cancel Anytime</h3>
+						<h3 className="planh3"> No Hidden Fees</h3>
+						<button className="ybtn1"> Get Started</button>
+					</div>
+					<div className="plan2">
+						<h1 className="planh11">Medium Class</h1>
+						<p className="planpp">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						</p>
+						<h2 className="planh22">Rs 55.00/Rs</h2>
+						<h3 className="planh33">Consultation</h3>
+						<h3 className="planh33"> 4 Hours Training</h3>
+						<h3 className="planh33">Cancel Anytime</h3>
+						<h3 className="planh33"> No Hidden Fees</h3>
+						<button className="ybtn11"> Get Started</button>
+					</div>
+					<div className="plan3">
+						<h1 className="planh1">Expert Class</h1>
+						<p className="planp">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						</p>
+						<h2 className="planh2">Rs 70.00/Rs</h2>
+						<h3 className="planh3">Consultation</h3>
+						<h3 className="planh3"> 4 Hours Training</h3>
+						<h3 className="planh3">Cancel Anytime</h3>
+						<h3 className="planh3"> No Hidden Fees</h3>
+						<button className="ybtn1"> Get Started</button>
+					</div>
+				</div>
 		</div>
 	);
 };
