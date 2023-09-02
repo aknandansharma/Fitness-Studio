@@ -7,6 +7,7 @@ import React from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../home.css";
+import { Link } from "react-router-dom";
 
 const FirstContainer = () => {
 	return (
@@ -32,7 +33,7 @@ const FirstContainer = () => {
 					molestiae atque voluptatem impedit exercitationem nisi cupiditate
 				</p>
 				<button>
-					<a href="/about">Why Us?</a>
+					<Link to="/about">Why Us?</Link>
 				</button>
 			</div>
 		</section>

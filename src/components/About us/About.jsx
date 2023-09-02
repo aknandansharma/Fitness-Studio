@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./About.css";
+import { Link } from "react-router-dom";
 
 const faqData = [
     { question: 'How much does it cost for membership?', answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris varius nibh fermentum velit sollicitudin molestie.' },
@@ -45,9 +46,9 @@ function About() {
                         illum deleniti magni repellat, quidem nihil eaque!
                         Sequi.
                     </p>
-                    <a href='/' class='btn'>
+                    <Link to='/notfound' class='btn'>
                         Read More
-                    </a>
+                    </Link>
                 </div>
             </section>
           {/* about us  end*/}

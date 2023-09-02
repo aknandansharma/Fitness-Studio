@@ -8,6 +8,7 @@ import Nutrition from "../../../assets/Nutrition.jpg";
 import meditation from "../../../assets/meditation.jpg";
 import pilates from "../../../assets/pilates.jpg";
 import "../home.css";
+import { useNavigate } from "react-router-dom";
 
 const SecondContainer = () => {
 	const [isVisible, setIsVisible] = useState(false);
@@ -49,6 +50,12 @@ const SecondContainer = () => {
 		slidesToScroll: 1,
 	};
 
+	const navigate = useNavigate();
+
+	const handleClick = () => {
+		navigate("/notfound");
+	};
+
 	return (
 		<section
 			id="home_second_container"
@@ -62,7 +69,7 @@ const SecondContainer = () => {
  						<h3>Yoga</h3>
  						<p>
 							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora
-							quis pariatur distinctio vel nobis del. <button>Know More...</button>
+							quis pariatur distinctio vel nobis del. <button onClick={handleClick}>Know More...</button>
 						</p>
 					</div>
 				</div>
@@ -72,7 +79,7 @@ const SecondContainer = () => {
 						<h3>Pilates</h3>
 						<p>
 							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora
-						quis pariatur distinctio vel nobis del. <button>Know More...</button>
+						quis pariatur distinctio vel nobis del. <button onClick={handleClick}>Know More...</button>
 						</p>
 					</div>
 </div>
@@ -82,7 +89,7 @@ const SecondContainer = () => {
 						<h3>Zumba</h3>
 						<p>
  							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora
-							quis pariatur distinctio vel nobis del. <button>Know More...</button>
+							quis pariatur distinctio vel nobis del. <button onClick={handleClick}>Know More...</button>
  						</p>
  					</div>
 				</div>
@@ -92,7 +99,7 @@ const SecondContainer = () => {
  						<h3>Meditation</h3>
 						<p>
 							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora
-						quis pariatur distinctio vel nobis del. <button>Know More...</button>					
+						quis pariatur distinctio vel nobis del. <button onClick={handleClick}>Know More...</button>					
 						</p>					
 						</div>
 			</div>
@@ -102,7 +109,7 @@ const SecondContainer = () => {
 						<h3>Nutrition</h3>
 						<p>
 							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora
-						quis pariatur distinctio vel nobis del. <button>Know More...</button>
+						quis pariatur distinctio vel nobis del. <button onClick={handleClick}>Know More...</button>
 </p>
 				</div>
 			</div>
