@@ -7,7 +7,6 @@ import { auth } from '../../../firebase';
 
 const pricingPlans = [
     { duration: "1 Month", price: 2000, discount: 5 },
-
     { duration: "3 Months", price: 4000, discount: 10 },
     { duration: "6 Months", price: 6000, discount: 20 },
     { duration: "1 Year", price: 9000, discount: 30 },
@@ -62,7 +61,7 @@ const Discount = () => {
         const options = {
             key: "rzp_test_mOvBMw0KK5CDuV",
             currency: "INR",
-            amount: 100000,
+            amount: 10000,
             name: "Fitness Stdio",
             description: "Thanks for Purchasing",
             image: "https://th.bing.com/th/id/OIP.Hx8-M_DJuLr23J4yqMO4gwHaGS?pid=ImgDet&rs=1",
