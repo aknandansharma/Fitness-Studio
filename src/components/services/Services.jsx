@@ -1,7 +1,14 @@
 import React from "react";
 import "./Services.css";
+import { useNavigate } from "react-router-dom";
 
 const Services = () => {
+
+    const navigate = useNavigate();
+
+    const handleClick = () => {
+      navigate("/notfound");
+    };
     return (
         <div className='bg-white'>
             <img

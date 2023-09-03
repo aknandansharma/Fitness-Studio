@@ -36,17 +36,10 @@ const Zumba = () => {
 					<div
             style={{ marginTop: '2vh', display: 'flex', flexDirection: 'row' }}
           >
-<<<<<<< HEAD
-            <button className=" abutton  hover:bg-orange-300 text-white font-bold py-2 px-4 rounded" style={{ marginRight: '15px' }}>
-              Get Started
-            </button>
-            <button className=" buttoncode2 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded">Learn More..</button>
-=======
             <button onClick={handleClick} className=" abutton  hover:bg-orange-300 text-white font-bold py-2 px-4 rounded" style={{ marginRight: '15px' }}>
               Get Started
             </button>
             <button onClick={handleClick} className=" buttoncode2 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded">Learn More..</button>
->>>>>>> 13ac7574f5915f702e7e477efe059d792ae64701
           </div>
 				</div>
 				{
@@ -141,11 +134,7 @@ const Zumba = () => {
                           stress-reducing benefits and offering tailored, transformative
                           experiences for inner peace.
                         </div>
-<<<<<<< HEAD
-                        <button className=" buttoncode2 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded-2xl">Click Here to Join</button>
-=======
                         <button onClick={handleClick} className=" buttoncode2 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded-2xl">Click Here to Join</button>
->>>>>>> 13ac7574f5915f702e7e477efe059d792ae64701
                       </div>    
               </div>
             </div>
@@ -183,13 +172,8 @@ const Zumba = () => {
                     legs or extend them out in front of you, whichever you feel is most comfortable.
                   </p>
                   <div className="card-buttons flex flex-row space-x-2 absolute bottom-3 right-3 rounded-xl">
-<<<<<<< HEAD
-                    <button className="abutton  hover:bg-orange-300 text-white font-bold py-2 px-4 rounded ">Share</button>
-                    <button className="buttoncode2 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded">Learn More</button>
-=======
                     <button onClick={handleClick} className="abutton  hover:bg-orange-300 text-white font-bold py-2 px-4 rounded ">Share</button>
                     <button onClick={handleClick} className="buttoncode2 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded">Learn More</button>
->>>>>>> 13ac7574f5915f702e7e477efe059d792ae64701
                   </div>
                 </div>
               </div>
@@ -208,13 +192,8 @@ const Zumba = () => {
                     rest anywhere on your lap.
                   </p>
                   <div className="card-buttons flex flex-row space-x-2 absolute bottom-3 right-3 rounded-xl">
-<<<<<<< HEAD
-                    <button className="abutton  hover:bg-orange-300 text-white font-bold py-2 px-4 rounded ">Share</button>
-                    <button className="buttoncode2 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded">Learn More</button>
-=======
                     <button onClick={handleClick} className="abutton  hover:bg-orange-300 text-white font-bold py-2 px-4 rounded ">Share</button>
                     <button onClick={handleClick} className="buttoncode2 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded">Learn More</button>
->>>>>>> 13ac7574f5915f702e7e477efe059d792ae64701
                   </div>
                 </div>
               </div>
@@ -233,13 +212,8 @@ const Zumba = () => {
                     right foot should lie gently on the left foot.
                   </p>
                   <div className="card-buttons flex flex-row space-x-2 absolute bottom-3 right-3 rounded-xl">
-<<<<<<< HEAD
-                    <button className="abutton  hover:bg-orange-300 text-white font-bold py-2 px-4 rounded ">Share</button>
-                    <button className="buttoncode2 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded">Learn More</button>
-=======
                     <button onClick={handleClick} className="abutton  hover:bg-orange-300 text-white font-bold py-2 px-4 rounded ">Share</button>
                     <button onClick={handleClick} className="buttoncode2 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded">Learn More</button>
->>>>>>> 13ac7574f5915f702e7e477efe059d792ae64701
                   </div>
                 </div>
               </div>
@@ -259,13 +233,8 @@ const Zumba = () => {
                     All you have to do is lay down on a surface making sure your back is straight.
                   </p>
                   <div className="card-buttons flex flex-row space-x-2 absolute bottom-3 right-3 rounded-xl">
-<<<<<<< HEAD
-                    <button className="abutton  hover:bg-orange-300 text-white font-bold py-2 px-4 rounded ">Share</button>
-                    <button className="buttoncode2 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded">Learn More</button>
-=======
                     <button onClick={handleClick} className="abutton  hover:bg-orange-300 text-white font-bold py-2 px-4 rounded ">Share</button>
                     <button onClick={handleClick} className="buttoncode2 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded">Learn More</button>
->>>>>>> 13ac7574f5915f702e7e477efe059d792ae64701
                   </div>
                 </div>
               </div>
@@ -287,13 +256,8 @@ const Zumba = () => {
                     any tension from your muscles.
                   </p>
                   <div className="card-buttons flex flex-row space-x-2 absolute bottom-3 right-3 rounded-xl">
-<<<<<<< HEAD
-                    <button className="abutton  hover:bg-orange-300 text-white font-bold py-2 px-4 rounded ">Share</button>
-                    <button className="buttoncode2 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded">Learn More</button>
-=======
                     <button onClick={handleClick} className="abutton  hover:bg-orange-300 text-white font-bold py-2 px-4 rounded ">Share</button>
                     <button onClick={handleClick} className="buttoncode2 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded">Learn More</button>
->>>>>>> 13ac7574f5915f702e7e477efe059d792ae64701
                   </div>
                 </div>
               </div>
@@ -313,13 +277,8 @@ const Zumba = () => {
                     meditation practice. This pose is almost similar to the quarter lotus pose.
                   </p>
                   <div className="card-buttons flex flex-row space-x-2 absolute bottom-3 right-3 rounded-xl">
-<<<<<<< HEAD
-                    <button className="abutton  hover:bg-orange-300 text-white font-bold py-2 px-4 rounded ">Share</button>
-                    <button className="buttoncode2 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded">Learn More</button>
-=======
                     <button onClick={handleClick} className="abutton  hover:bg-orange-300 text-white font-bold py-2 px-4 rounded ">Share</button>
                     <button onClick={handleClick} className="buttoncode2 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded">Learn More</button>
->>>>>>> 13ac7574f5915f702e7e477efe059d792ae64701
                   </div>
                 </div>
               </div>
@@ -349,11 +308,7 @@ const Zumba = () => {
         </ul>
       </div>
       <div className="absolute bottom-3 left-20">
-<<<<<<< HEAD
-        <button className="px-4 py-2 buttoncode2 hover:bg-gray-500 text-white rounded-full">{tier.buttonText}</button>
-=======
         <button onClick={handleClick} className="px-4 py-2 buttoncode2 hover:bg-gray-500 text-white rounded-full">{tier.buttonText}</button>
->>>>>>> 13ac7574f5915f702e7e477efe059d792ae64701
       </div>
     </div>
   ))}
@@ -374,11 +329,7 @@ const Zumba = () => {
 						<h3 className="planh3"> 4 Hours Training</h3>
 						<h3 className="planh3">Cancel Anytime</h3>
 						<h3 className="planh3"> No Hidden Fees</h3>
-<<<<<<< HEAD
-						<button className="ybtn1"> Get Started</button>
-=======
 						<button onClick={handleClick} className="ybtn1"> Get Started</button>
->>>>>>> 13ac7574f5915f702e7e477efe059d792ae64701
 					</div>
 					<div className="plan2">
 						<h1 className="planh11">Medium Class</h1>
@@ -390,11 +341,7 @@ const Zumba = () => {
 						<h3 className="planh33"> 4 Hours Training</h3>
 						<h3 className="planh33">Cancel Anytime</h3>
 						<h3 className="planh33"> No Hidden Fees</h3>
-<<<<<<< HEAD
-						<button className="ybtn11"> Get Started</button>
-=======
 						<button onClick={handleClick} className="ybtn11"> Get Started</button>
->>>>>>> 13ac7574f5915f702e7e477efe059d792ae64701
 					</div>
 					<div className="plan3">
 						<h1 className="planh1">Expert Class</h1>
@@ -406,11 +353,7 @@ const Zumba = () => {
 						<h3 className="planh3"> 4 Hours Training</h3>
 						<h3 className="planh3">Cancel Anytime</h3>
 						<h3 className="planh3"> No Hidden Fees</h3>
-<<<<<<< HEAD
-						<button className="ybtn1"> Get Started</button>
-=======
 						<button onClick={handleClick} className="ybtn1"> Get Started</button>
->>>>>>> 13ac7574f5915f702e7e477efe059d792ae64701
 					</div>
 				</div>
 		</div>

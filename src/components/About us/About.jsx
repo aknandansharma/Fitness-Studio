@@ -1,18 +1,30 @@
 import React, { useState } from "react";
 import "./About.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const faqData = [
-    { question: 'How much does it cost for membership?', answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris varius nibh fermentum velit sollicitudin molestie.' },
-    { question: 'What classes do you have?', answer:  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris varius nibh fermentum velit sollicitudin molestie.' },
-    { question: 'What types of fitness course do you teach?', answer:  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris varius nibh fermentum velit sollicitudin molestie.' }
+    {
+        question: "How much does it cost for membership?",
+        answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris varius nibh fermentum velit sollicitudin molestie.",
+    },
+    {
+        question: "What classes do you have?",
+        answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris varius nibh fermentum velit sollicitudin molestie.",
+    },
+    {
+        question: "What types of fitness course do you teach?",
+        answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris varius nibh fermentum velit sollicitudin molestie.",
+    },
     // Add more FAQ entries as needed
-  ];
+];
 
 function About() {
     const [openIndex, setOpenIndex] = useState(null);
+    const navigate = useNavigate();
 
-    
+    const handleClick = () => {
+        navigate("/notfound");
+    };
 
     const toggleFAQ = (index) => {
         if (openIndex === index) {
@@ -24,7 +36,7 @@ function About() {
 
     return (
         <>
-        {/* about us */}
+            {/* about us */}
             <div className='aboutus'>
                 <span class='span7'>About Us</span>
             </div>
@@ -45,26 +57,23 @@ function About() {
                         necessitatibus repudiandae commodi, quaerat a nostrum,
                         illum deleniti magni repellat, quidem nihil eaque!
                         Sequi.
-
-                        <div className="play-btn">
-								<button ><i className="fa-solid fa-play" href="https://www.youtube.com/watch?v=EO-5Fnh13kw" ></i></button>
-                             
-							 </div>
+                        <div className='play-btn'>
+                            <button>
+                                <i
+                                    className='fa-solid fa-play'
+                                    href='https://www.youtube.com/watch?v=EO-5Fnh13kw'></i>
+                            </button>
+                        </div>
                     </p>
-<<<<<<< HEAD
-                    
-                        
-                       
-=======
+
                     <Link to='/notfound' class='btn'>
                         Read More
                     </Link>
->>>>>>> 13ac7574f5915f702e7e477efe059d792ae64701
                 </div>
             </section>
-          {/* about us  end*/}
+            {/* about us  end*/}
 
-          {/* faq start */}
+            {/* faq start */}
             <div className='faqdiv'>
                 <div className='faq-img'>
                     <img
@@ -195,8 +204,12 @@ function About() {
                     </h4>
                     <br />
                     <div className='buttons'>
-                        <button className='btn21'>Accept</button>
-                        <button className='btn22'>Decline</button>
+                        <button onClick={handleClick} className='btn21'>
+                            Accept
+                        </button>
+                        <button onClick={handleClick} className='btn22'>
+                            Decline
+                        </button>
                     </div>
                 </div>
             </div>
