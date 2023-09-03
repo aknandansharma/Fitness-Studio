@@ -76,7 +76,7 @@ const Contact = () => {
 							type="email"
 							name="email"
 						/>
-						<input
+						<textarea
 							placeholder="Message"
 							type="text"
 						/>

@@ -3,9 +3,17 @@ import "./Nutrition.css";
 
 import Img from "../../assets/img/n1-removebg-preview.png";
 import Img1 from "../../assets/img/l3.png";
+import { useNavigate } from "react-router-dom";
+
+
 
 
 function Nutrition() {
+	const navigate = useNavigate();
+
+	const handleClick = () => {
+	  navigate("/notfound");
+	};
 	return (
 		<>
 			{/* nutrition start */}
@@ -25,10 +33,17 @@ function Nutrition() {
             style={{ marginTop: '2vh', display: 'flex', flexDirection: 'row' }}
           >
             
+<<<<<<< HEAD
             <button className="abutton  hover:bg-orange-300 text-white font-bold py-2 px-4 rounded" style={{ marginRight: '15px' }}>
               Get Started
             </button>
             <button className="buttoncode2 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded">Learn More..</button>
+=======
+            <button onClick={handleClick} className="abutton  hover:bg-orange-300 text-white font-bold py-2 px-4 rounded" style={{ marginRight: '15px' }}>
+              Get Started
+            </button>
+            <button onClick={handleClick} className="buttoncode2 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded">Learn More..</button>
+>>>>>>> 13ac7574f5915f702e7e477efe059d792ae64701
           </div>
          </div>
         {<img className='heroimg'
@@ -66,7 +81,11 @@ function Nutrition() {
 									nutrients for growth, energy, and overall health. It plays a
 									crucial role in maintaining bodily functions.
 								</div>
+<<<<<<< HEAD
 								<button className="buttoncode2 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded-2xl">Click Here to Join</button>
+=======
+								<button onClick={handleClick} className="buttoncode2 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded-2xl">Click Here to Join</button>
+>>>>>>> 13ac7574f5915f702e7e477efe059d792ae64701
 							</div>
 						</div>
 					</div>
@@ -154,7 +173,11 @@ function Nutrition() {
 									Exploring the intricate relationship between nutrition and well-being for a healthier life.
 								</p>
 								<div className="card-buttons flex flex-row space-x-2 absolute bottom-3 right-3 rounded-xl">
+<<<<<<< HEAD
 									<button className="buttoncode2 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded">View More</button>
+=======
+									<button onClick={handleClick} className="buttoncode2 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded">View More</button>
+>>>>>>> 13ac7574f5915f702e7e477efe059d792ae64701
 								</div>
 							</div>
 						</div>
@@ -172,7 +195,11 @@ function Nutrition() {
 								</p>
 								<div className="card-buttons flex flex-row space-x-2 absolute bottom-3 right-3 rounded-xl">
 
+<<<<<<< HEAD
 									<button className="buttoncode2 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded">View More</button>
+=======
+									<button onClick={handleClick} className="buttoncode2 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded">View More</button>
+>>>>>>> 13ac7574f5915f702e7e477efe059d792ae64701
 								</div>
 							</div>
 						</div>
@@ -191,7 +218,11 @@ function Nutrition() {
 								</p>
 								<div className="card-buttons flex flex-row space-x-2 absolute bottom-3 right-3 rounded-xl ">
 
+<<<<<<< HEAD
 									<button className="buttoncode2 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded">View More</button>
+=======
+									<button onClick={handleClick} className="buttoncode2 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded">View More</button>
+>>>>>>> 13ac7574f5915f702e7e477efe059d792ae64701
 								</div>
 							</div>
 						</div>
@@ -256,7 +287,11 @@ function Nutrition() {
 					<h3 className="planh3"> 4 Hours Training</h3>
 					<h3 className="planh3">Cancel Anytime</h3>
 					<h3 className="planh3"> No Hidden Fees</h3>
+<<<<<<< HEAD
 					<button className="ybtn1"> Get Started</button>
+=======
+					<button onClick={handleClick} className="ybtn1"> Get Started</button>
+>>>>>>> 13ac7574f5915f702e7e477efe059d792ae64701
 				</div>
 				<div className="plan2">
 					<h1 className="planh11">Medium Class</h1>
@@ -268,7 +303,11 @@ function Nutrition() {
 					<h3 className="planh33"> 4 Hours Training</h3>
 					<h3 className="planh33">Cancel Anytime</h3>
 					<h3 className="planh33"> No Hidden Fees</h3>
+<<<<<<< HEAD
 					<button className="ybtn11"> Get Started</button>
+=======
+					<button onClick={handleClick} className="ybtn11"> Get Started</button>
+>>>>>>> 13ac7574f5915f702e7e477efe059d792ae64701
 				</div>
 				<div className="plan3">
 					<h1 className="planh1">Expert Class</h1>
@@ -280,7 +319,11 @@ function Nutrition() {
 					<h3 className="planh3"> 4 Hours Training</h3>
 					<h3 className="planh3">Cancel Anytime</h3>
 					<h3 className="planh3"> No Hidden Fees</h3>
+<<<<<<< HEAD
 					<button className="ybtn1"> Get Started</button>
+=======
+					<button onClick={handleClick} className="ybtn1"> Get Started</button>
+>>>>>>> 13ac7574f5915f702e7e477efe059d792ae64701
 				</div>
 			</div>
 		</>
