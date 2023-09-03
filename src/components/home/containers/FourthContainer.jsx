@@ -63,10 +63,10 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import testmonial1 from "../../assets/testomonial1.jpg";
-import testmonial2 from "../../assets/testomonial2.jpg";
-import testmonial3 from "../../assets/testomonial3.jpg";
-import "./home.css";
+import testmonial1 from "../../../assets/testomonial1.jpg";
+import testmonial2 from "../../../assets/testomonial2.jpg";
+import testmonial3 from "../../../assets/testomonial3.jpg";
+import "../home.css";
 
 const TestimonialCard = ({ image, text, author }) => (
 	<div className="carousel-card">

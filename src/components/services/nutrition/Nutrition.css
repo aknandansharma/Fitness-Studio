@@ -325,5 +325,7 @@
 	.detail-box2{
 	display: none;
 	}
-	
+	.hero{
+		height: 80vh;
+	}
 }

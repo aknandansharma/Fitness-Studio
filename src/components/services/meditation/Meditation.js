@@ -1,5 +1,5 @@
 import React from 'react';
-import "./service.css";
+import "./Meditation.css";
 import Cover from "../../../assets/services-assets/images/meditationcover.png";
 import Img from "../../../assets/services-assets/images/meditationleaningdownI.webp";
 import Img2 from "../../../assets/services-assets/images/MeditationHappyPose2.webp";
@@ -7,9 +7,15 @@ import Img3 from "../../../assets/services-assets/images/MeditaitonBurmesePose3.
 import Img4 from "../../../assets/services-assets/images/MeditationLayingdown4.webp";
 import Img5 from "../../../assets/services-assets/images/Meditationa_quick_tip5.webp";
 import Img6 from "../../../assets/services-assets/images/MedidationHalfLotus6.webp";
+import { useNavigate } from "react-router-dom";
 
 
 const Meditation = () => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/notfound");
+  };
 
   return (
     <div>
@@ -30,10 +36,11 @@ const Meditation = () => {
             style={{ marginTop: '2vh', display: 'flex', flexDirection: 'row' }}
           >
             
-            <button className="abutton  hover:bg-orange-300 text-white font-bold py-2 px-4 rounded" style={{ marginRight: '15px' }}>
+            <button onClick={handleClick} className="abutton  hover:bg-orange-300 text-white font-bold py-2 px-4 rounded" style={{ marginRight: '15px' }}>
               Get Started
             </button>
-            <button className="buttoncode2 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded">Learn More..</button>
+            <button onClick={handleClick} className="buttoncode2 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded">Learn More..</button>
+
           </div>
          </div>
         {<img className='heroimg'
@@ -126,7 +133,9 @@ const Meditation = () => {
                           stress-reducing benefits and offering tailored, transformative
                           experiences for inner peace.
                         </div>
-                        <button className="buttoncode2 hover:bg-gray-500  text-white font-bold py-2 px-4 rounded-2xl">Click Here to Join</button>
+
+                        <button onClick={handleClick} className="buttoncode2 hover:bg-gray-500  text-white font-bold py-2 px-4 rounded-2xl">Click Here to Join</button>
+
                       </div>    
               </div>
             </div>
@@ -165,8 +174,10 @@ const Meditation = () => {
                     legs or extend them out in front of you, whichever you feel is most comfortable.
                   </p>
                   <div className="card-buttons flex flex-row space-x-2 absolute bottom-3 right-3 rounded-xl">
-                    <button className="abutton  hover:bg-orange-300 text-white font-bold py-2 px-4 rounded ">Share</button>
-                    <button className="buttoncode2 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded">Learn More</button>
+
+                    <button onClick={handleClick} className="abutton  hover:bg-orange-300 text-white font-bold py-2 px-4 rounded ">Share</button>
+                    <button onClick={handleClick} className="buttoncode2 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded">Learn More</button>
+
                   </div>
                 </div>
               </div>
@@ -185,8 +196,10 @@ const Meditation = () => {
                     rest anywhere on your lap.
                   </p>
                   <div className="card-buttons flex flex-row space-x-2 absolute bottom-3 right-3 rounded-xl">
-                    <button className="abutton  hover:bg-orange-300 text-white font-bold py-2 px-4 rounded ">Share</button>
-                    <button className="buttoncode2 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded">Learn More</button>
+
+                    <button onClick={handleClick} className="abutton  hover:bg-orange-300 text-white font-bold py-2 px-4 rounded ">Share</button>
+                    <button onClick={handleClick} className="buttoncode2 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded">Learn More</button>
+
                   </div>
                 </div>
               </div>
@@ -205,8 +218,10 @@ const Meditation = () => {
                     right foot should lie gently on the left foot.
                   </p>
                   <div className="card-buttons flex flex-row space-x-2 absolute bottom-3 right-3 rounded-xl">
-                    <button className="abutton  hover:bg-orange-300 text-white font-bold py-2 px-4 rounded ">Share</button>
-                    <button className="buttoncode2 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded">Learn More</button>
+
+                    <button onClick={handleClick} className="abutton  hover:bg-orange-300 text-white font-bold py-2 px-4 rounded ">Share</button>
+                    <button onClick={handleClick} className="buttoncode2 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded">Learn More</button>
+
                   </div>
                 </div>
               </div>
@@ -226,8 +241,10 @@ const Meditation = () => {
                     All you have to do is lay down on a surface making sure your back is straight.
                   </p>
                   <div className="card-buttons flex flex-row space-x-2 absolute bottom-3 right-3 rounded-xl">
-                    <button className="abutton  hover:bg-orange-300 text-white font-bold py-2 px-4 rounded ">Share</button>
-                    <button className="buttoncode2 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded">Learn More</button>
+
+                    <button onClick={handleClick} className="abutton  hover:bg-orange-300 text-white font-bold py-2 px-4 rounded ">Share</button>
+                    <button onClick={handleClick} className="buttoncode2 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded">Learn More</button>
+
                   </div>
                 </div>
               </div>
@@ -249,8 +266,10 @@ const Meditation = () => {
                     any tension from your muscles.
                   </p>
                   <div className="card-buttons flex flex-row space-x-2 absolute bottom-3 right-3 rounded-xl">
-                    <button className="abutton  hover:bg-orange-300 text-white font-bold py-2 px-4 rounded ">Share</button>
-                    <button className="buttoncode2 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded">Learn More</button>
+
+                    <button onClick={handleClick} className="abutton  hover:bg-orange-300 text-white font-bold py-2 px-4 rounded ">Share</button>
+                    <button onClick={handleClick} className="buttoncode2 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded">Learn More</button>
+
                   </div>
                 </div>
               </div>
@@ -270,8 +289,10 @@ const Meditation = () => {
                     meditation practice. This pose is almost similar to the quarter lotus pose.
                   </p>
                   <div className="card-buttons flex flex-row space-x-2 absolute bottom-3 right-3 rounded-xl">
-                    <button className="abutton  hover:bg-orange-300 text-white font-bold py-2 px-4 rounded ">Share</button>
-                    <button className="buttoncode2 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded">Learn More</button>
+
+                    <button onClick={handleClick} className="abutton  hover:bg-orange-300 text-white font-bold py-2 px-4 rounded ">Share</button>
+                    <button onClick={handleClick} className="buttoncode2 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded">Learn More</button>
+
                   </div>
                 </div>
               </div>
@@ -300,7 +321,9 @@ const Meditation = () => {
         </ul>
       </div>
       <div className="absolute bottom-3 left-20">
-        <button className="px-4 py-2 buttoncode2 hover:bg-gray-500  text-white rounded-full">{tier.buttonText}</button>
+
+        <button onClick={handleClick} className="px-4 py-2 buttoncode2 hover:bg-gray-500  text-white rounded-full">{tier.buttonText}</button>
+
       </div>
     </div>
   ))}
@@ -321,7 +344,9 @@ const Meditation = () => {
 						<h3 className="planh3"> 4 Hours Training</h3>
 						<h3 className="planh3">Cancel Anytime</h3>
 						<h3 className="planh3"> No Hidden Fees</h3>
-						<button className="ybtn1"> Get Started</button>
+
+						<button onClick={handleClick} className="ybtn1"> Get Started</button>
+
 					</div>
 					<div className="plan2">
 						<h1 className="planh11">Medium Class</h1>
@@ -333,7 +358,9 @@ const Meditation = () => {
 						<h3 className="planh33"> 4 Hours Training</h3>
 						<h3 className="planh33">Cancel Anytime</h3>
 						<h3 className="planh33"> No Hidden Fees</h3>
-						<button className="ybtn11"> Get Started</button>
+
+						<button onClick={handleClick} className="ybtn11"> Get Started</button>
+
 					</div>
 					<div className="plan3">
 						<h1 className="planh1">Expert Class</h1>
@@ -345,7 +372,9 @@ const Meditation = () => {
 						<h3 className="planh3"> 4 Hours Training</h3>
 						<h3 className="planh3">Cancel Anytime</h3>
 						<h3 className="planh3"> No Hidden Fees</h3>
-						<button className="ybtn1"> Get Started</button>
+
+						<button onClick={handleClick} className="ybtn1"> Get Started</button>
+
 					</div>
 				</div>
 

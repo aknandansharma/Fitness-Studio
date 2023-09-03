@@ -169,6 +169,9 @@ align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
   }
+  .hero{
+    height: 80vh;
+}
   .pilates{
     display: flex;
     flex-direction: row;

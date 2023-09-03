@@ -63,7 +63,7 @@ const Footer = () => {
 						<li>
 							<span></span>
 							<span>
-								<a href="tel:+1234567890">+91 9756734525</a>
+								<a href="tel:+91 1234567890">+91 9756734525</a>
 								<br />
 								<a href="tel:+91 7894321345">+91 9738621562</a>
 							</span>
@@ -92,7 +92,7 @@ const Footer = () => {
 				</div>
 			</div>
 			<div style={{ textAlign: "center" }}>
-				<p>Copyright ©️ Abhilasha. All Right Reserved@2023</p>
+				<p>Copyright ©️ Abhilasha Tiwari. All Right Reserved@2023</p>
 			</div>
 		</footer>
 	);

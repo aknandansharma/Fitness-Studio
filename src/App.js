@@ -18,6 +18,7 @@ import Pilates from "./components/services/pilates/Pilates";
 import Meditation from "./components/services/meditation/Meditation";
 import Nutrition from "./components/services/Nutrition";
 import Zumba from "./components/services/zumba/Zumba";
+import NoteFound from "./NoteFound";
 
 
 const App = () => {
@@ -91,6 +92,10 @@ const App = () => {
 				<Route
 					path="/userdetails"
 					element={<UserDetails />}
+				/>
+				<Route
+					path="/notfound"
+					element={<NoteFound />}
 				/>
 			</Routes>
 			<Footer />

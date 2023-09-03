@@ -140,6 +140,9 @@ align-items: center;
 .pilatestext{
   width: 80vw;
 }
+.hero{
+  height: 80vh;
+}
 
 }
 

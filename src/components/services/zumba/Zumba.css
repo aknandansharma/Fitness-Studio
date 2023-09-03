@@ -170,4 +170,7 @@ align-items: center;
   .heroimg {
     display: none;
   }
+  .hero{
+    height: 80vh;
+}
 }

@@ -1,6 +1,6 @@
 
 import React from 'react';
-import './service.css';
+import './Pilates.css';
 import Cover from '../../../assets/services-assets/images/pilatescover.png';
 import Img from '../../../assets/services-assets/images/meditationleaningdownI.webp';
 import Img2 from '../../../assets/services-assets/images/MeditationHappyPose2.webp';
@@ -8,6 +8,8 @@ import Img3 from '../../../assets/services-assets/images/MeditaitonBurmesePose3.
 import Img4 from '../../../assets/services-assets/images/MeditationLayingdown4.webp';
 import Img5 from '../../../assets/services-assets/images/Meditationa_quick_tip5.webp';
 import Img6 from '../../../assets/services-assets/images/MedidationHalfLotus6.webp';
+
+import { useNavigate } from "react-router-dom";
 
 const tiers = [
   {
@@ -47,12 +49,20 @@ const tiers = [
 ];
 
 const Pilates = () => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/notfound");
+  };
+
   return (
     <div className="all-container">
       <div className="hero banner">
         <div className="me-title2">
           <div className="textDesign1 textshadow2" style={{ color: 'black' }}>
-           <span className='text-5xl' style={{color:"#3B8004"}}>Pilates</span>: Complete coordination of body, <span style={{color:"#DAA520"}}>mind and spirit.</span>
+
+            <span className='text-5xl' style={{ color: "#3B8004" }}>Pilates</span>: Complete coordination of body, <span style={{ color: "#DAA520" }}>mind and spirit.</span>
+
           </div>
           <div className="paraDesign1">
             <p>Step into a world of mindful movement and core empowerment</p>
@@ -62,10 +72,12 @@ const Pilates = () => {
           <div
             style={{ marginTop: '2vh', display: 'flex', flexDirection: 'row' }}
           >
-            <button className=" abutton  hover:bg-orange-300 text-white font-bold py-2 px-4 rounded" style={{ marginRight: '15px' }}>
+
+            <button onClick={handleClick} className=" abutton  hover:bg-orange-300 text-white font-bold py-2 px-4 rounded" style={{ marginRight: '15px' }}>
               Get Started
             </button>
-            <button className=" buttoncode2 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded">Learn More..</button>
+            <button onClick={handleClick} className=" buttoncode2 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded">Learn More..</button>
+
           </div>
         </div>
         {
@@ -73,7 +85,9 @@ const Pilates = () => {
             className="heroimg"
             src={Cover}
             alt="herobanner"
-            style={{ width: '40vw', position: 'absolute', right: '0%',bottom:"30%"}}
+
+            style={{ width: '40vw', position: 'absolute', right: '0%', bottom: "30%" }}
+
           />
         }
       </div>
@@ -92,7 +106,9 @@ const Pilates = () => {
               <p className="textDesign1" style={{ fontSize: '25px' }}>
                 Guided Pilates for Beginners
               </p>
-              <p  style={{ fontSize: '20px',marginLeft:"5px" }}>
+
+              <p style={{ fontSize: '20px', marginLeft: "5px" }}>
+
                 Our Guided Pilates for Beginners classes are specifically tailored for
                 those who are new to meditation. These sessions provide a gentle
                 introduction to the practice of meditation, helping participants
@@ -107,7 +123,9 @@ const Pilates = () => {
               <p className="textDesign1" style={{ fontSize: '25px' }}>
                 Intermediate Pilates Practice
               </p>
-              <p  style={{ fontSize: '20px' }}>
+
+              <p style={{ fontSize: '20px' }}>
+
                 The Intermediate Pilates Practice classes are designed to deepen your
                 meditation experience. With a focus on refining mindfulness techniques
                 and exploring different meditation approaches, participants in this
@@ -122,7 +140,9 @@ const Pilates = () => {
               <p className="textDesign1" style={{ fontSize: '25px' }}>
                 Advanced Pilates Mastery
               </p>
-              <p  style={{ fontSize: '20px' }}>
+
+              <p style={{ fontSize: '20px' }}>
+
                 Our Advanced Pilates Mastery classes are intended for seasoned
                 meditators who have established a strong foundation in meditation
                 techniques. These sessions delve into more advanced practices, offering
@@ -136,43 +156,45 @@ const Pilates = () => {
       </div>
 
       <div className="choose-us banner">
-          <div className="chooseus p-2 pb-4">
-            <div className="section-one flex flex-wrap w-full md:w-1/2">
-              <div >
-                <img 
-                  className="imgTransform imgT border rounded-lg shadow-2xl"
-                  src="https://images.unsplash.com/photo-1602192509154-0b900ee1f851?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bWVkaXRhdGlvbnxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"
-                  alt="choose-pic"
-                />
-              </div>
+
+        <div className="chooseus p-2 pb-4">
+          <div className="section-one flex flex-wrap w-full md:w-1/2">
+            <div >
+              <img
+                className="imgTransform imgT border rounded-lg shadow-2xl"
+                src="https://images.unsplash.com/photo-1602192509154-0b900ee1f851?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bWVkaXRhdGlvbnxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"
+                alt="choose-pic"
+              />
             </div>
-            <div className="section-two flex flex-wrap w-full md:w-1/2 flex justify-center">
-              <div className="">
-                <div className="textDesign1 text-center pr-20">
-                  WHY CHOOSE US
+          </div>
+          <div className="section-two flex flex-wrap w-full md:w-1/2 flex justify-center">
+            <div className="">
+              <div className="textDesign1 text-center pr-20">
+                WHY CHOOSE US
+              </div>
+              <div className="pilatestext w-2/3  mt-8 ml-9 font-serif text-2xl">
+                Pilates can produce a deep state of relaxation and a tranquil mind.
+              </div>
+              <div className='whycard border border-1 rounded-2xl border-white-300 p-2 w-2/3 mt-16 ml-5'>
+                <div className="cardpara text-3xl font-bold ">
+                  Attract fresh meditators by showcasing meditation's
+                  stress-reducing benefits and offering tailored, transformative
+                  experiences for inner peace.
                 </div>
-                <div className="pilatestext w-2/3  mt-8 ml-9 font-serif text-2xl">
-                  Pilates can produce a deep state of relaxation and a tranquil mind.
-                </div>
-                      <div className='whycard border border-1 rounded-2xl border-white-300 p-2 w-2/3 mt-16 ml-5'>
-                      <div className="cardpara text-3xl font-bold ">
-                          Attract fresh meditators by showcasing meditation's
-                          stress-reducing benefits and offering tailored, transformative
-                          experiences for inner peace.
-                        </div>
-                        <button className=" buttoncode2 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded-2xl">Click Here to Join</button>
-                      </div>    
+                <button onClick={handleClick} className=" buttoncode2 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded-2xl">Click Here to Join</button>
+
               </div>
             </div>
           </div>
+        </div>
       </div>
 
-     
+
 
       <div className='course banner mt-20 pb-15'>
         <div className="textDesign1 text-center">
           Our Courses
-        <span
+          <span
             style={{
               display: 'inline-block',
               verticalAlign: 'middle',
@@ -183,6 +205,7 @@ const Pilates = () => {
               marginBottom: '9px',
             }}
           ></span>
+
           </div>
         <div className='course '>
           <div className='coursecardone flex flex-row flex-wrap '>
@@ -317,76 +340,53 @@ const Pilates = () => {
       </div>
 
 
-      {/* <div className='priceCard'>
-        <h3 className='textDesign text-center pt-4 text-3xl mt-24'>Price List</h3>
-        <div className='flex flex-row flex-wrap gap-6 text-center justify-center mb-10 mt-20'>
-  {tiers.map((tier,index)=>(
 
-    <div key={index} className='relative bg-white rounded-lg shadow-md border-2  w-80 h-80 p-6 banner'>
-      <h3 className='text-xl font-semibold'>{tier.title}</h3>
-      {tier.subheader && <div className='text-gray-600 mt-1'>{tier.subheader}</div>}
-      <div className="mt-4">
-        <div className="flex justify-center">
-          <span className="text-2xl font-semibold">Rs.{tier.price}</span>
-          <span className="ml-1 text-lg">/mo</span>
-        </div>
-        <ul className="list-disc ml-5 mt-2 text-gray-600">
-          {tier.description.map((line, index) => (
-            <li key={index}>{line}</li>
-          ))}
-        </ul>
-      </div>
-      <div className="absolute bottom-3 left-20">
-        <button className="px-4 py-2 buttoncode2 hover:bg-gray-500 text-white rounded-full">{tier.buttonText}</button>
-      </div>
-    </div>
-  ))}
-        </div>
-      </div> */}
-  
-  <div className='planprice mt-9'>
+
+
+      <div className='planprice mt-9'>
         <h2 className=' text-center text-5xl font-extrabold'>Price List</h2>
       </div>
       <div className="plan">
-					<div className="plan1">
-						<h1 className="planh1">Regular Class</h1>
-						<p className="planp">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-						</p>
-						<h2 className="planh2">Rs 40.00/Rs</h2>
-						<h3 className="planh3">Consultation</h3>
-						<h3 className="planh3"> 4 Hours Training</h3>
-						<h3 className="planh3">Cancel Anytime</h3>
-						<h3 className="planh3"> No Hidden Fees</h3>
-						<button className="ybtn1"> Get Started</button>
-					</div>
-					<div className="plan2">
-						<h1 className="planh11">Medium Class</h1>
-						<p className="planpp">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-						</p>
-						<h2 className="planh22">Rs 55.00/Rs</h2>
-						<h3 className="planh33">Consultation</h3>
-						<h3 className="planh33"> 4 Hours Training</h3>
-						<h3 className="planh33">Cancel Anytime</h3>
-						<h3 className="planh33"> No Hidden Fees</h3>
-						<button className="ybtn11"> Get Started</button>
-					</div>
-					<div className="plan3">
-						<h1 className="planh1">Expert Class</h1>
-						<p className="planp">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-						</p>
-						<h2 className="planh2">Rs 70.00/Rs</h2>
-						<h3 className="planh3">Consultation</h3>
-						<h3 className="planh3"> 4 Hours Training</h3>
-						<h3 className="planh3">Cancel Anytime</h3>
-						<h3 className="planh3"> No Hidden Fees</h3>
-						<button className="ybtn1"> Get Started</button>
-					</div>
-				</div>
+        <div className="plan1">
+          <h1 className="planh1">Regular Class</h1>
+          <p className="planp">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <h2 className="planh2">Rs 40.00/Rs</h2>
+          <h3 className="planh3">Consultation</h3>
+          <h3 className="planh3"> 4 Hours Training</h3>
+          <h3 className="planh3">Cancel Anytime</h3>
+          <h3 className="planh3"> No Hidden Fees</h3>
+          <button onClick={handleClick} className="ybtn1"> Get Started</button>
+        </div>
+        <div className="plan2">
+          <h1 className="planh11">Medium Class</h1>
+          <p className="planpp">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <h2 className="planh22">Rs 55.00/Rs</h2>
+          <h3 className="planh33">Consultation</h3>
+          <h3 className="planh33"> 4 Hours Training</h3>
+          <h3 className="planh33">Cancel Anytime</h3>
+          <h3 className="planh33"> No Hidden Fees</h3>
+          <button onClick={handleClick} className="ybtn11"> Get Started</button>
+        </div>
+        <div className="plan3">
+          <h1 className="planh1">Expert Class</h1>
+          <p className="planp">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <h2 className="planh2">Rs 70.00/Rs</h2>
+          <h3 className="planh3">Consultation</h3>
+          <h3 className="planh3"> 4 Hours Training</h3>
+          <h3 className="planh3">Cancel Anytime</h3>
+          <h3 className="planh3"> No Hidden Fees</h3>
+          <button onClick={handleClick} className="ybtn1"> Get Started</button>
+        </div>
+      </div>
 
-     
+
+>>>>>>> 13ac7574f5915f702e7e477efe059d792ae64701
     </div>
   );
 }

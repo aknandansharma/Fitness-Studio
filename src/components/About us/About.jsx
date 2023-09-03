@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./About.css";
+import { Link } from "react-router-dom";
 
 const faqData = [
     { question: 'How much does it cost for membership?', answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris varius nibh fermentum velit sollicitudin molestie.' },
@@ -44,10 +45,16 @@ function About() {
                         necessitatibus repudiandae commodi, quaerat a nostrum,
                         illum deleniti magni repellat, quidem nihil eaque!
                         Sequi.
+
+                        <div className="play-btn">
+								<button ><i className="fa-solid fa-play" href="https://www.youtube.com/watch?v=EO-5Fnh13kw" ></i></button>
+                             
+							 </div>
                     </p>
-                    <a href='/' class='btn'>
+                    <Link to='/notfound' class='btn'>
                         Read More
-                    </a>
+                    </Link>
+
                 </div>
             </section>
           {/* about us  end*/}
