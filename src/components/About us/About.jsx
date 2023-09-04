@@ -49,7 +49,9 @@ const About = () => {
                 <ServiceCard
                     image='https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdm1ncDQzZXpmb2xiNHZueDA3ZGoyem85MW13Y3d6b3lpMnF4aXY2ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/GZbgYa0mVQoBKrnuYT/giphy.gif'
                     title='ENROLL NOW'
-                    description='Are you ready to embark on a journey of health, strength, and transformation? Look no further – our Fitness Studio is here to guide you towards your wellness goals.'
+
+                    description='Are you ready to embark on a journey of health, strength, and transformation? Look no further ï¿½ our Fitness Studio is here to guide you towards your wellness goals.'
+
                     link='/enroll'
                 />
             </div>
