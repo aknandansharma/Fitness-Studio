@@ -75,6 +75,7 @@ const UserDetails = () => {
 							value={fullName}
 							onChange={(e) => setFullName(e.target.value)}
 							placeholder="Enter Full Name"
+							required
 						/>
 					</div>
 					<div>
@@ -91,6 +92,7 @@ const UserDetails = () => {
 							value={currentWeight}
 							onChange={(e) => setCurrentWeight(e.target.value)}
 							placeholder="Enter Current Weight"
+							required
 						/>
 					</div>
 					<div>
@@ -107,6 +109,7 @@ const UserDetails = () => {
 							value={height}
 							onChange={(e) => setHeight(e.target.value)}
 							placeholder="Enter Height"
+							required
 						/>
 					</div>
 					<div>
@@ -123,6 +126,7 @@ const UserDetails = () => {
 							value={bmi}
 							onChange={(e) => setBmi(e.target.value)}
 							placeholder="Find Your BMI: BMI = weight (kg) / (height (m))^2"
+							required
 						/>
 					</div>
 					<div>
@@ -139,6 +143,7 @@ const UserDetails = () => {
 							value={age}
 							onChange={(e) => setAge(e.target.value)}
 							placeholder="Enter Age"
+							required
 						/>
 					</div>
 					<div>
@@ -155,6 +160,7 @@ const UserDetails = () => {
 							value={goalWeight}
 							onChange={(e) => setGoalWeight(e.target.value)}
 							placeholder="Enter Goal Weight"
+							required
 						/>
 					</div>
 					<div>
@@ -170,6 +176,7 @@ const UserDetails = () => {
 							className="w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
 							value={address}
 							onChange={(e) => setAddress(e.target.value)}
+							required
 						></textarea>
 					</div>
 					<div>
@@ -186,6 +193,7 @@ const UserDetails = () => {
 							value={phoneNumber}
 							onChange={(e) => setPhoneNumber(e.target.value)}
 							placeholder="Enter Phone Number"
+							required
 						/>
 					</div>
 					<div>
@@ -202,6 +210,7 @@ const UserDetails = () => {
 							value={email}
 							onChange={(e) => setEmail(e.target.value)}
 							placeholder="Enter Email"
+							required
 						/>
 					</div>
 					<div>
@@ -218,6 +227,7 @@ const UserDetails = () => {
 							value={emergencyContactPerson}
 							onChange={(e) => setEmergencyContactPerson(e.target.value)}
 							placeholder="Enter Emergency Contact Person"
+							required
 						/>
 					</div>
 					<div>
@@ -234,6 +244,7 @@ const UserDetails = () => {
 							value={relationship}
 							onChange={(e) => setRelationship(e.target.value)}
 							placeholder="Enter Relationship"
+							required
 						/>
 					</div>
 					<div>
@@ -249,6 +260,7 @@ const UserDetails = () => {
 							value={deserveReason}
 							onChange={(e) => setDeserveReason(e.target.value)}
 							placeholder="Enter Reason why you deserve to be in the Grace Transformation Challenge."
+							required
 						></textarea>
 					</div>
 
@@ -259,6 +271,7 @@ const UserDetails = () => {
 							className="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded"
 							checked={acceptedTerms}
 							onChange={(e) => setAcceptedTerms(e.target.checked)}
+							
 						/>
 						<label
 							htmlFor="acceptedTerms"

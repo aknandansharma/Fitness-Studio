@@ -34,13 +34,13 @@ const EnrollNow = () => {
                         <button
                             type='button'
                             onClick={() => navigate("/register")}
-                            className='px-8 py-3 m-2 text-lg border rounded dark:border-gray-700 dark:text-gray-900 hover:bg-sky-700'>
+                            className='px-8 py-3 m-2 text-lg border rounded dark:border-gray-700 dark:text-gray-900 hover:bg-sky-700 enrollnowBTN'>
                             Register
                         </button>
                         <button
                             type='button'
                             onClick={() => navigate("/login")}
-                            className='px-8 py-3 m-2 text-lg border rounded dark:border-gray-700 dark:text-gray-900 hover:bg-green-700'>
+                            className='px-8 py-3 m-2 text-lg border rounded dark:border-gray-700 dark:text-gray-900 hover:bg-green-700 enrollnowBTN'>
                             Login
                         </button>
                     </div>
