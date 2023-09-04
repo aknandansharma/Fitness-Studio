@@ -102,8 +102,10 @@ const Discount = () => {
                             />
                             <div className='overlay'>
                                 <div className='text'>
+                                    <p className="text-lg w-32 h-50">
                                     You can save 10% if you choose the 3-month
                                     plan option.
+                                    </p>
                                 </div>
                             </div>
                         </span>
@@ -116,10 +118,12 @@ const Discount = () => {
                                 src='https://t4.ftcdn.net/jpg/00/98/97/59/240_F_98975906_CJNgwJZ8z62SHsjlGqSrG2JisAXWeXBh.jpg'
                                 alt='discount pic'
                             />
-                            <div className='overlay'>
+                            <div className='overlay '>
                                 <div className='text'>
+                                    <p className="text-lg w-32 h-50">
                                     You can save 20% if you choose the 6-month
                                     plan option.
+                                    </p>
                                 </div>
                             </div>
                         </span>
@@ -131,8 +135,10 @@ const Discount = () => {
                             />
                             <div className='overlay'>
                                 <div className='text'>
+                                    <p className="text-lg w-32 h-50">
                                     You can save 30% if you choose the 1-Year
                                     plan option.
+                                    </p>
                                 </div>
                             </div>
                         </span>
@@ -144,8 +150,10 @@ const Discount = () => {
                             />
                             <div className='overlay'>
                                 <div className='text'>
+                                    <p className="text-lg w-32 h-22">
                                     You can save 40% if you choose the Lifetime
                                     plan option.
+                                    </p>
                                 </div>
                             </div>
                         </span>

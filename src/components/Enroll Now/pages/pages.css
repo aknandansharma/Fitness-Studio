@@ -65,7 +65,7 @@ textarea{
   
   .text {
     color: black;
-    font-size: 17px;
+    font-size: 15px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     position: absolute;
     top: 50%;
@@ -75,6 +75,7 @@ textarea{
     transform: translate(-50%, -50%);
     text-align: center;
   }
+
 
   .selectPlan{
     font-size: 20px;
@@ -124,8 +125,6 @@ textarea{
 }
 
 
-
-
-/* Payment Page CSS */
+  
 
 
