@@ -4,11 +4,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 .profileIMG{
   transition: transform .2s;
 }
+
 
 .profileIMG:hover{
   transform: scale(1.1);
@@ -25,4 +27,6 @@
 .serviceContainer{
   border: 1px solid #000;
   border-radius: 10px;
+
 }
+
