@@ -224,8 +224,8 @@ const Pilates = () => {
                     legs or extend them out in front of you, whichever you feel is most comfortable.
                   </p>
                   <div className="card-buttons flex flex-row space-x-2 absolute bottom-3 right-3 rounded-xl">
-                    <button className="abutton  hover:bg-orange-300 text-white font-bold py-2 px-4 rounded ">Share</button>
-                    <button className="buttoncode2 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded">Learn More</button>
+                    <button onClick={handleClick} className="abutton  hover:bg-orange-300 text-white font-bold py-2 px-4 rounded ">Share</button>
+                    <button onClick={handleClick} className="buttoncode2 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded">Learn More</button>
                   </div>
                 </div>
               </div>
@@ -244,8 +244,8 @@ const Pilates = () => {
                     rest anywhere on your lap.
                   </p>
                   <div className="card-buttons flex flex-row space-x-2 absolute bottom-3 right-3 rounded-xl">
-                    <button className="abutton  hover:bg-orange-300 text-white font-bold py-2 px-4 rounded ">Share</button>
-                    <button className="buttoncode2 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded">Learn More</button>
+                    <button onClick={handleClick} className="abutton  hover:bg-orange-300 text-white font-bold py-2 px-4 rounded ">Share</button>
+                    <button onClick={handleClick} className="buttoncode2 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded">Learn More</button>
                   </div>
                 </div>
               </div>
@@ -264,8 +264,8 @@ const Pilates = () => {
                     right foot should lie gently on the left foot.
                   </p>
                   <div className="card-buttons flex flex-row space-x-2 absolute bottom-3 right-3 rounded-xl">
-                    <button className="abutton  hover:bg-orange-300 text-white font-bold py-2 px-4 rounded ">Share</button>
-                    <button className="buttoncode2 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded">Learn More</button>
+                    <button onClick={handleClick} className="abutton  hover:bg-orange-300 text-white font-bold py-2 px-4 rounded ">Share</button>
+                    <button onClick={handleClick} className="buttoncode2 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded">Learn More</button>
                   </div>
                 </div>
               </div>
@@ -285,8 +285,8 @@ const Pilates = () => {
                     All you have to do is lay down on a surface making sure your back is straight.
                   </p>
                   <div className="card-buttons flex flex-row space-x-2 absolute bottom-3 right-3 rounded-xl">
-                    <button className="abutton  hover:bg-orange-300 text-white font-bold py-2 px-4 rounded ">Share</button>
-                    <button className="buttoncode2 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded">Learn More</button>
+                    <button onClick={handleClick} className="abutton  hover:bg-orange-300 text-white font-bold py-2 px-4 rounded ">Share</button>
+                    <button onClick={handleClick} className="buttoncode2 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded">Learn More</button>
                   </div>
                 </div>
               </div>
@@ -308,8 +308,8 @@ const Pilates = () => {
                     any tension from your muscles.
                   </p>
                   <div className="card-buttons flex flex-row space-x-2 absolute bottom-3 right-3 rounded-xl">
-                    <button className="abutton  hover:bg-orange-300 text-white font-bold py-2 px-4 rounded ">Share</button>
-                    <button className="buttoncode2 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded">Learn More</button>
+                    <button onClick={handleClick} className="abutton  hover:bg-orange-300 text-white font-bold py-2 px-4 rounded ">Share</button>
+                    <button onClick={handleClick} className="buttoncode2 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded">Learn More</button>
                   </div>
                 </div>
               </div>
@@ -329,8 +329,8 @@ const Pilates = () => {
                     meditation practice. This pose is almost similar to the quarter lotus pose.
                   </p>
                   <div className="card-buttons flex flex-row space-x-2 absolute bottom-3 right-3 rounded-xl">
-                    <button className="abutton  hover:bg-orange-300 text-white font-bold py-2 px-4 rounded ">Share</button>
-                    <button className="buttoncode2 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded">Learn More</button>
+                    <button onClick={handleClick} className="abutton  hover:bg-orange-300 text-white font-bold py-2 px-4 rounded ">Share</button>
+                    <button onClick={handleClick} className="buttoncode2 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded">Learn More</button>
                   </div>
                 </div>
               </div>
@@ -385,8 +385,6 @@ const Pilates = () => {
         </div>
       </div>
 
-
->>>>>>> 13ac7574f5915f702e7e477efe059d792ae64701
     </div>
   );
 }

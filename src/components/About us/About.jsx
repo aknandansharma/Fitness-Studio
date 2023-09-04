@@ -1,208 +1,127 @@
-import React, { useState } from "react";
+import React from "react";
 import "./About.css";
+import WhyChoose from "./WhyChoose";
 import { Link } from "react-router-dom";
 
-const faqData = [
-    { question: 'How much does it cost for membership?', answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris varius nibh fermentum velit sollicitudin molestie.' },
-    { question: 'What classes do you have?', answer:  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris varius nibh fermentum velit sollicitudin molestie.' },
-    { question: 'What types of fitness course do you teach?', answer:  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris varius nibh fermentum velit sollicitudin molestie.' }
-    // Add more FAQ entries as needed
-  ];
-
-function About() {
-    const [openIndex, setOpenIndex] = useState(null);
-
-    
-
-    const toggleFAQ = (index) => {
-        if (openIndex === index) {
-            setOpenIndex(null);
-        } else {
-            setOpenIndex(index);
-        }
-    };
-
+const About = () => {
     return (
-        <>
-        {/* about us */}
-            <div className='aboutus'>
-                <span class='span7'>About Us</span>
+        <div className='bg-white'>
+            <img
+                src='https://i.ibb.co/ryW2896/final-photo.png'
+                alt='Page pic'
+                className='w-full imageControl'
+            />
+            <h2 className='text-2xl font-semibold mt-8 mx-4 text-center'>
+                These services are offered by us.
+            </h2>
+
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 p-4'>
+                <ServiceCard
+                    image='https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZTJhcGp3dzE2NGxqZ250bXpiYW5pYjYxdjIyeGkwc253YXBlbzM4ZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/loG7TbqLitOPTVfg3o/giphy.gif'
+                    title='YOGA'
+                    description='Yoga, an ancient practice rooted in India, unites body, mind, and soul. Through physical postures (asanas), controlled breathing (pranayama), and meditation, it fosters holistic well-being. '
+                    link='/services/yoga/Yoga'
+                />
+                <ServiceCard
+                    image='https://media4.giphy.com/media/cM1axtlW4w6M1Q9m2H/200w.webp?cid=ecf05e47ijj692d9pas9g2wcco81rwyf34r8fitop4f57qyr&ep=v1_gifs_search&rid=200w.webp&ct=g'
+                    title='ZUMBA'
+                    description='Zumba, a dynamic and exhilarating fitness phenomenon, infuses dance with exercise to create a unique and enjoyable workout experience.'
+                    link='/services/zumba/Zumba'
+                />
+                <ServiceCard
+                    image='https://media2.giphy.com/media/QZE1v890QSpGwWjgdO/giphy.webp?cid=ecf05e47s80pg6dltkumm6utqn3ervgsz119ysz0t2iqhm1h&ep=v1_gifs_search&rid=giphy.webp&ct=g'
+                    title='PILATES'
+                    description='Pilates exercises primarily target the deep muscles of the abdomen, back, and pelvis, known as the "powerhouse." '
+                    link='/services/pilates/Pilates'
+                />
+                <ServiceCard
+                    image='https://media1.giphy.com/media/17mGDCFnG3592dnoHa/giphy.webp?cid=ecf05e47briu10s0398ytjncxj65ev84lyyuseap94snks9n&ep=v1_gifs_search&rid=giphy.webp&ct=g'
+                    title='MEDITATION'
+                    description='Meditation, a timeless practice with roots in ancient traditions such as Buddhism, Hinduism, and Taoism, is a technique that cultivates mindfulness, self-awareness, and inner tranquility. '
+                    link='/services/meditation/Meditation'
+                />
+                <ServiceCard
+                    image='https://media3.giphy.com/media/RvGJFfFGVzjgU0TT4P/200.webp?cid=ecf05e47ml8q5j7fa7l39hza60pvanrrr3yv0hxygdiinzcj&ep=v1_gifs_search&rid=200.webp&ct=g'
+                    title='NUTRITION'
+                    description='Nutrition, the fundamental aspect of human well-being, revolves around the intake of nutrients from food and its impact on our health. It plays a vital role in maintaining bodily functions, supporting growth, and preventing various diseases. '
+                    link='/services/nutrition/Nutrition'
+                />
+                <ServiceCard
+                    image='https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdm1ncDQzZXpmb2xiNHZueDA3ZGoyem85MW13Y3d6b3lpMnF4aXY2ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/GZbgYa0mVQoBKrnuYT/giphy.gif'
+                    title='ENROLL NOW'
+                    description='Are you ready to embark on a journey of health, strength, and transformation? Look no further – our Fitness Studio is here to guide you towards your wellness goals.'
+                    link='/enroll'
+                />
             </div>
 
-            <section class='about' id='about'>
-                <div class='about-img'>
-                    <img
-                        src='https://media.istockphoto.com/id/1127485222/photo/gym-training-on-stationary-bikes.jpg?s=612x612&w=0&k=20&c=iBD_Cksse1_7FRoWgnxMI1fz34eheOEUexYzGYIEaDI='
-                        alt=''
-                    />
-                </div>
-                <div class='about-content'>
-                    <h3>Story About Us</h3>
-                    <p>
-                        {" "}
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Modi rem nisi vero cumque harum odit quisquam
-                        necessitatibus repudiandae commodi, quaerat a nostrum,
-                        illum deleniti magni repellat, quidem nihil eaque!
-                        Sequi.
+            {/* this is import from whychoose.jsx */}
+            <WhyChoose />
 
-                        <div className="play-btn">
-								<button ><i className="fa-solid fa-play" href="https://www.youtube.com/watch?v=EO-5Fnh13kw" ></i></button>
-                             
-							 </div>
-                    </p>
+            <h2 className='text-2xl font-semibold mt-8 mx-4 text-center'>
+                Meet Our Teams
+            </h2>
 
-                    
-                        
-                       
-
-                    <Link to='/notfound' class='btn'>
-                        Read More
-                    </Link>
-
-                </div>
-            </section>
-          {/* about us  end*/}
-
-          {/* faq start */}
-            <div className='faqdiv'>
-                <div className='faq-img'>
-                    <img
-                        src='https://media.istockphoto.com/id/1330784998/photo/group-of-people-listening-to-a-presentation.webp?b=1&s=170667a&w=0&k=20&c=9kGkTr5x5OvzU4TKaEQHIwr8POvNimbQtm-88V81hHg='
-                        alt=''
-                    />
-                </div>
-                <div className='dropdown-faq'>
-                    <h1 className='faqheading'> Frequently Asked Questions</h1>
-                    <br />
-                    <ul>
-                        {faqData.map((item, index) => (
-                            <li key={index}>
-                                <button
-                                    className='faq-question'
-                                    onClick={() => toggleFAQ(index)}>
-                                    {item.question}
-                                </button>
-                                {openIndex === index && (
-                                    <p className='faq-answer'>{item.answer}</p>
-                                )}
-                            </li>
-                        ))}
-                    </ul>
-                </div>
+            <div className='grid grid-cols-2 lg:grid-cols-4 gap-4 p-4'>
+                <SocialProfileCard
+                    image='https://avatars.githubusercontent.com/u/90132050?v=4'
+                    name='Aknandan Sharma'
+                    designation='Full Stack Developer (MERN)'
+                    link='https://github.com/aknandansharma'
+                />
+                <SocialProfileCard
+                    image='https://avatars.githubusercontent.com/u/108613361?v=4'
+                    name='Abhilasha Tiwari'
+                    designation='Frontend Developer'
+                    link='https://github.com/Abhilasha1197'
+                />
+                <SocialProfileCard
+                    image='https://avatars.githubusercontent.com/u/66622782?v=4'
+                    name='Abdul Ahad'
+                    designation='Full Stack Developer (MERN)'
+                    link='https://github.com/ahadiraqui'
+                />
+                <SocialProfileCard
+                    image='https://avatars.githubusercontent.com/u/117986493?v=4'
+                    name='Nandini Kamble'
+                    designation='Frontend Developer'
+                    link='https://github.com/nandinikamble12'
+                />
             </div>
-            <div className='mainfaq-div'>
-                <h1 className='faqheading1'>FAQS</h1>
-                <h1 className='faqheading2'>Regular Questions</h1>
-                <p className='faqheading3'>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Quae eius neque labore vero fugiat sit voluptates libero
-                    quis nostrum non consectetur !
-                </p>
-                <div className='faqdisplay'>
-                    <div className='faqdisplay1'>
-                        <ul>
-                            {faqData.map((item, index) => (
-                                <li key={index}>
-                                    <button
-                                        className='faq-question'
-                                        onClick={() => toggleFAQ(index)}>
-                                        {item.question}
-                                    </button>
-                                    {openIndex === index && (
-                                        <p className='faq-answer'>
-                                            {item.answer}
-                                        </p>
-                                    )}
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-                    <div className='faqdisplay1'>
-                        <ul>
-                            {faqData.map((item, index) => (
-                                <li key={index}>
-                                    <button
-                                        className='faq-question'
-                                        onClick={() => toggleFAQ(index)}>
-                                        {item.question}
-                                    </button>
-                                    {openIndex === index && (
-                                        <p className='faq-answer'>
-                                            {item.answer}
-                                        </p>
-                                    )}
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            {/* faq end */}
-
-            {/* terms and condition start */}
-            <div className='termbody'>
-                <div className='terms-box'>
-                    <div className='terms-text'>
-                        <h1>Terms And Conditions</h1>
-                        <br />
-                        <p>Last Edit: 25/08/2023</p>
-                        <br />
-                        <p>Greetings Users,</p>
-                        <br />
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Perspiciatis, et corporis quo dicta nulla sunt
-                            rem tempore ullam quas eveniet facilis esse iusto
-                            quasi tempora veniam provident doloremque, dolor
-                            excepturi.
-                        </p>
-                        <br />
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Perspiciatis, et corporis quo dicta nulla sunt
-                            rem tempore ullam quas eveniet facilis esse iusto
-                            quasi tempora veniam provident doloremque, dolor
-                            excepturi.
-                        </p>
-                        <br />
-
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Perspiciatis, et corporis quo dicta nulla sunt
-                            rem tempore ullam quas eveniet facilis esse iusto
-                            quasi tempora veniam provident doloremque, dolor
-                            excepturi.
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Perspiciatis, et corporis quo dicta nulla sunt
-                            rem tempore ullam quas eveniet facilis esse iusto
-                            quasi tempora veniam provident doloremque, dolor
-                            excepturi.
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Perspiciatis, et corporis quo dicta nulla sunt
-                            rem tempore ullam quas eveniet facilis esse iusto
-                            quasi tempora veniam provident doloremque, dolor
-                            excepturi.
-                        </p>
-                    </div>
-                    <h4>
-                        I Agree to the <span>Terms and Condition</span>and i
-                        read the Privacy Notice.
-                    </h4>
-                    <br />
-                    <div className='buttons'>
-                        <button className='btn21'>Accept</button>
-                        <button className='btn22'>Decline</button>
-                    </div>
-                </div>
-            </div>
-            {/* terms and condition end */}
-        </>
+        </div>
     );
-}
+};
+
+const ServiceCard = ({ image, title, description, link }) => {
+    return (
+        <div className='bg-gray-100 p-4 serviceContainer'>
+            <img src={image} alt={title} className='w-full servicesIMG' />
+            <h3 className='text-lg font-semibold mt-4'>{title}</h3>
+            <p className='mt-2'>{description}</p>
+            <Link to={link} className='text-blue-500 hover:underline mt-4'>
+                Know More
+            </Link>
+        </div>
+    );
+};
+
+const SocialProfileCard = ({ image, name, designation, link }) => {
+    return (
+        <div className='bg-white p-4 text-center'>
+            <img
+                src={image}
+                alt={name}
+                className='w-full rounded-full profileIMG'
+            />
+            <h3 className='text-lg font-semibold mt-4'>{name}</h3>
+            <p className='text-gray-500'>{designation}</p>
+            <a
+                href={link}
+                target='_blank'
+                className='text-blue-500 hover:underline mt-4'>
+                Go to Profile
+            </a>
+        </div>
+    );
+};
 
 export default About;

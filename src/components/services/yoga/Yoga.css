@@ -48,7 +48,7 @@ body{
 }
 .cardy2{
     width: 400px;
-  
+   
     margin: 1rem;
     margin-left: 2rem;
   }
@@ -638,9 +638,7 @@ background-color: rgb(57, 56, 56) ;
        
         margin: 1.5rem;
     }
-    .hero{
-        height: 80vh;
-    }
+   
       .heading7 {
         color: black;
         font-size: 2.5rem;
@@ -652,6 +650,9 @@ background-color: rgb(57, 56, 56) ;
             height: 20rem;
             width: 400px;
             margin-top: 3rem;
+        }
+        .whycard {
+            width: 40vh;
         }
 
 }

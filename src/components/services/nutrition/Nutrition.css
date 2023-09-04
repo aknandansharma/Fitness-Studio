@@ -154,7 +154,7 @@
 }
 .cardy{
     width: 400px;
-    height: 450px;
+    height: 500px;
     margin: 1rem;
     margin-left: 2rem;
   }
@@ -327,5 +327,8 @@
 	}
 	.hero{
 		height: 80vh;
+	}
+	.whycard {
+		width: 40vh;
 	}
 }

@@ -3,7 +3,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from "./components/header/Header";
 import Scroll from "./components/scroll/Scroll";
 import Home from "./components/home/Home";
-import Services from "./components/services/Services";
+import Services from "./components/services/Services"
+
 import About from "./components/About us/About";
 import Contact from "./components/contact us/Contact";
 import Footer from "./components/footer/Footer";
@@ -12,11 +13,11 @@ import Register from "./components/Enroll Now/pages/Register";
 import Login from "./components/Enroll Now/pages/Login";
 import Discount from "./components/Enroll Now/pages/Discount";
 import UserDetails from "./components/Enroll Now/pages/UserDetails";
-import Yoga from "./components/services/Yoga";
+import Yoga from "./components/services/yoga/Yoga";
 
 import Pilates from "./components/services/pilates/Pilates";
 import Meditation from "./components/services/meditation/Meditation";
-import Nutrition from "./components/services/Nutrition";
+import Nutrition from "./components/services/nutrition/Nutrition";
 import Zumba from "./components/services/zumba/Zumba";
 import NoteFound from "./NoteFound";
 
@@ -38,7 +39,7 @@ const App = () => {
 					element={<Services />}
 				/>
 				<Route
-					path="/services/yoga"
+					path="/services/yoga/Yoga"
 					element={<Yoga />}
 				/>
 
@@ -52,7 +53,7 @@ const App = () => {
 				/>
 
 				<Route
-					path="/services/nutrition"
+					path="/services/nutrition/Nutrition"
 					element={<Nutrition />}
 				/>
 

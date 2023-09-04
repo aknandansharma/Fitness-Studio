@@ -201,7 +201,7 @@ function Yoga() {
                     <div className='coursecardone flex flex-row flex-wrap'>
                         <div
                             className='cardy one border border-1 border-white-500 p-2 drop-shadow-xl'
-                            style={{ height: "550px" }}>
+                            style={{ height: "600px" }}>
                             <img
                                 className='imgTransform rounded-xl border'
                                 style={{ height: "300px", width: "90vh" }}
@@ -235,7 +235,7 @@ function Yoga() {
                         </div>
                         <div
                             className='cardy two border border-1 border-white-500 p-2 drop-shadow-xl'
-                            style={{ height: "550px" }}>
+                            style={{ height: "600px" }}>
                             <img
                                 className='imgTransform card-img rounded-xl'
                                 style={{ height: "300px", width: "90vh" }}
@@ -268,7 +268,7 @@ function Yoga() {
                         </div>
                         <div
                             className='cardy three border border-1 border-white-500 p-2 drop-shadow-xl'
-                            style={{ height: "550px" }}>
+                            style={{ height: "600px" }}>
                             <img
                                 className='imgTransform card-img rounded-xl'
                                 style={{ height: "300px", width: "90vh" }}
@@ -304,7 +304,7 @@ function Yoga() {
                     <div className='coursecard flex flex-row flex-wrap'>
                         <div
                             className='cardy one border border-1 border-white-500 p-2 drop-shadow-xl'
-                            style={{ height: "550px" }}>
+                            style={{ height: "600px" }}>
                             <img
                                 className='imgTransform card-img border rounded-xl'
                                 style={{ height: "300px", width: "90vh" }}
@@ -336,7 +336,7 @@ function Yoga() {
 
                         <div
                             className='cardy two border border-1 border-white-500 p-2 drop-shadow-xl'
-                            style={{ height: "550px" }}>
+                            style={{ height: "600px" }}>
                             <img
                                 className='imgTransform card-img rounded-xl'
                                 style={{ height: "300px", width: "90vh" }}
@@ -371,7 +371,7 @@ function Yoga() {
 
                         <div
                             className='cardy three  border border-1 border-white-500 p-2 drop-shadow-xl'
-                            style={{ height: "550px" }}>
+                            style={{ height: "600px" }}>
                             <img
                                 className='imgTransform card-img rounded-xl'
                                 style={{ height: "300px", width: "90vh" }}
